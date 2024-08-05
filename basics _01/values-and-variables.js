@@ -12,9 +12,9 @@ let mycurrentjob ="teacher";
 console.log(mycurrentjob)
 console.log(myfirstjob)
 
-let country ="INDA,USA,CANADA,UK,AUSTRALIA,AUSTRIA,GERMANY "
-let continent ="ASIA,EUROPE,AMERICA,AUSTRALIA,AFRICA "
-let population ="8 billon plus"
+let country ="INDA"
+let continent ="ASIA"
+let population ="1.4 billon"
 
 console.log(country)
 console.log(continent)
