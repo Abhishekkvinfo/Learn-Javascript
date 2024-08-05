@@ -1,6 +1,4 @@
 let isIsland = true;
-
-let country = true;
 let language ;
 
 console.log(typeof isIsland)
