@@ -7,3 +7,9 @@ const ageofsarah = now -2004;
 
 console.log(ageofabhi,ageofsarah)
 console.log(ageofabhi *2,ageofabhi /2 , 2**3);
+
+const firstname = "Abhishek";
+const lastname = "kalady";
+
+
+console.log(firstname + lastname);
