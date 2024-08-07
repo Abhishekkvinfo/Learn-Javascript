@@ -22,3 +22,10 @@ x--;
 x--;
 
 console.log(x)
+
+//comparison operators
+
+console.log(ageofabhi>ageofsarah)
+console.log(ageofabhi<ageofsarah)
+console.log(ageofabhi>=18)
+console.log(ageofsarah>=18)
