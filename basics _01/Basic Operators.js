@@ -29,3 +29,9 @@ console.log(ageofabhi>ageofsarah)
 console.log(ageofabhi<ageofsarah)
 console.log(ageofabhi>=18)
 console.log(ageofsarah>=18)
+
+let a,b;
+
+a=b=10+343-67;
+
+console.log(a,b)
