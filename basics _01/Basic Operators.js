@@ -35,3 +35,4 @@ let a,b;
 a=b=10+343-67;
 
 console.log(a,b)
+
