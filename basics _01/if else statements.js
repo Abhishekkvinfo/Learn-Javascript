@@ -15,7 +15,7 @@ else{
 const birthyear = 2007;
 
 let century;
-if(birthyear){
+if(birthyear <=2000){
 
     century = 20;
 }
