@@ -11,3 +11,16 @@ else{
     const yearsleft = 18 - age;
     console.log(`you are too young wait for ${yearsleft} years  `)
 }
+
+const birthyear = 2007;
+
+let century;
+if(birthyear){
+
+    century = 20;
+}
+else{
+    century =21;
+}
+
+console.log(century)
