@@ -1,5 +1,5 @@
 
-const age = 18;
+const age = 17;
 
 if(age >=18){
 
@@ -7,6 +7,7 @@ if(age >=18){
 }
 
 else{
-
-    console.log("you have a standard")
+    
+    const yearsleft = 18 - age;
+    console.log(`you are too young wait for ${yearsleft} years  `)
 }
