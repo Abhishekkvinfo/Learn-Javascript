@@ -12,7 +12,7 @@ else{
     console.log(`you are too young wait for ${yearsleft} years  `)
 }
 
-const birthyear = 2007;
+const birthyear = 2000;
 
 let century;
 if(birthyear <=2000){
