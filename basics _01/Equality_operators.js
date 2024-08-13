@@ -30,3 +30,5 @@ else{
     console.log("invalid number ");
 }
 
+if ( number !== 16)console.log("YAY")
+
