@@ -1,29 +1,29 @@
 
-const number =Number (prompt("whats your favourite number ?")
+const number =Number (prompt("whats roll number ?")
 ) ;
 if(number ===1){
 
-    console.log("1 is true");
+    console.log("Abhinav");
 }
 else if(number === 2){
 
-    console.log("its true")
+    console.log("Abhishek")
 }
 else if(number === 3){
 
-    console.log("its true")
+    console.log("Aroma")
 }
 else if(number === 4){
 
-    console.log("its true")
+    console.log("Devika")
 }
 else if(number === 5){
 
-    console.log("its true")
+    console.log("Irfan")
 }
 else if(number === 6){
 
-    console.log("its true")
+    console.log("Arjun")
 }
 else{
 
