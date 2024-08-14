@@ -1,5 +1,5 @@
  
-const day = "tuesday";
+const day = "monday";
 
 switch(day){
 
