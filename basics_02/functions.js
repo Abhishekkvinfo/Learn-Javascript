@@ -26,4 +26,14 @@ function calcage(birthyear){
 
 }
 const age1 = calcage(2007);
-console.log(age1)
+console.log(age1);
+
+const age2 = function(birthyear0){
+return 2024-birthyear0;
+
+}
+
+const age3 =age2(2005);
+
+console.log(age3)
+
