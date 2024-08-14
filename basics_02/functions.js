@@ -19,3 +19,11 @@ console.log(apple)
 
 const orange = fruitprocessor(22,99);
 console.log(orange)
+
+function calcage(birthyear){
+
+    return 2024-birthyear;
+
+}
+const age1 = calcage(2007);
+console.log(age1)
