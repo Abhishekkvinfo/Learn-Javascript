@@ -1,7 +1,7 @@
 
 
-const scoreDolphins =(50+108+89)/3;
-const scoreKoalas =(50+108+89)/3;
+const scoreDolphins =(500+108+89)/3;
+const scoreKoalas =(501+108+89)/3;
 
 console.log(scoreDolphins,scoreKoalas);
 
