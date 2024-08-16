@@ -24,7 +24,6 @@ console.log(yearsuntilretirment(2000," mr issac"))
 function cutfruits (fruit ,pop){
 
     return fruit * 4;
-    return pop *4;
 }
 
 function fruitprocessor(apples , oranges ,anar){
@@ -33,7 +32,7 @@ function fruitprocessor(apples , oranges ,anar){
    const orangejuice = cutfruits(oranges);
    const anar1 = cutfruits(anar);
 
-   const juice = `juice with ${apples} apples and ${oranges} oranges  and ${anar} anar. ${applejuice} pieces of apple ${orangejuice} pieces of orange and ${anar1} ś   `
+   const juice = `juice with ${apples} apples and ${oranges} oranges  and ${anar} anar. ${applejuice} pieces of apple ${orangejuice} pieces of orange and ${anar1}   `;
    return juice;
 }
  
