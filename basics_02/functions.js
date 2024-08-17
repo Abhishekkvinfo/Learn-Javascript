@@ -74,3 +74,19 @@ const yearsuntilretirement1 = function(birthyear1 , name ){
 }
 const output1 = yearsuntilretirement1(1995, "John ");
 console.log(output1)
+
+// arrow function 
+
+const calcage2 = (birthyear2)=>{
+
+    return 2024 - birthyear2;
+}
+
+const years =(birthyear2,firstname2)=>{
+
+    const age = calcage2 (birthyear2);
+    const retirement2 = 65 -age;
+    return `${firstname2} will retires after ${retirement2} years`
+}
+const output3 = years(2005,"GUHAN")
+console.log(output3)
