@@ -44,7 +44,7 @@
 
 // reviewing the topics about learned before....
 
-
+// function
 function calcage(birthyear){
 
     return 2024 - birthyear;
@@ -58,3 +58,19 @@ function yearsuntilretirement(birthyear , firstname){
 }
 const output = yearsuntilretirement(2002, "ABHISHEK KV")
 console.log(output)
+
+//function expression
+
+const calcage1 = function(birthyear1){
+
+    return 2024 - birthyear1;
+}
+
+const yearsuntilretirement1 = function(birthyear1 , name ){
+
+    const age1 = calcage1(birthyear1);
+    const retirement1 = 65 - age1;
+    return `${name} will retires after ${retirement1} years ` 
+}
+const output1 = yearsuntilretirement1(1995, "John ");
+console.log(output1)
