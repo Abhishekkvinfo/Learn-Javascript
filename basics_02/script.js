@@ -22,3 +22,27 @@ const yearsuntilretirement1 = function (birthyear1, name) {
 
 const output3 =yearsuntilretirement1 (1959, "abhishek")
 console.log(output3)
+
+// challenge 
+
+//TEST DATA :1
+//dolphins
+
+const calcaverage =(a,b,c) =>(a + b +c /3);
+
+const dolphins = calcaverage(44,23,71);
+const koalas = calcaverage(65,54,49);
+console.log(dolphins ,koalas);
+
+const checkavg = function(avgdolphins,avgkoalas){ 
+
+    if(dolphins >=2* koalas)
+        {
+            console.log(`Dolphines win the trophy ${avgdolphins} vs ${avgkoalas}`)
+        }else {
+
+            console.log(`koalas win the trophy ${avgkoalas} vs ${avgdolphins}`)
+        }
+ }
+
+ checkavg(dolphins,koalas)
