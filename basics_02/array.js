@@ -1,8 +1,8 @@
 
 
-const friends = ['Abhishek','Arjun','Ashok','salini','neha','Irfan','sanjay']
+//const friends = ['Abhishek','Arjun','Ashok','salini','neha','Irfan','sanjay']
 
-console.log(friends);
+//console.log(friends);
 
 const persons = new Array('Abhishek','Arjun','Ashok','salini','neha','Irfan','sanjay')
 
@@ -15,8 +15,8 @@ const year =new Array (1,3,2,4,6,7,7,6,35,43,34,45,53,55,35,65,656,3,35553,5,35,
 
 console.log(year[1])
 
-friends[2] ='Emliy'
-console.log(friends)
+//friends[2] ='Emliy'
+// console.log(friends)
 
 
 const calcage = function(birthyear){
@@ -35,3 +35,9 @@ const age6 =calcage(years[5])
 const age7 =calcage(years[6])
 const age8 =calcage(years[7])
 console.log(age1,age2,age3,age4,age5,age6,age7,age8)
+
+
+const homies =["Arjun","Abhi","Irfan","Nithin","Jose"]
+
+homies.push("AVANTI")
+console.log(homies)
