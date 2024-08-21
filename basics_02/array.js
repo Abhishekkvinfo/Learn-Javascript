@@ -37,7 +37,11 @@ const age8 =calcage(years[7])
 console.log(age1,age2,age3,age4,age5,age6,age7,age8)
 
 
+//add
 const homies =["Arjun","Abhi","Irfan","Nithin","Jose"]
 
 homies.push("AVANTI")
+console.log(homies)
+
+homies.unshift("sony")
 console.log(homies)
