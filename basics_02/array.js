@@ -43,5 +43,13 @@ const homies =["Arjun","Abhi","Irfan","Nithin","Jose"]
 homies.push("AVANTI")
 console.log(homies)
 
-homies.unshift("sony")
+homies.unshift("sonnali")
+console.log(homies)
+
+//remove
+
+homies.shift();
+console.log(homies)
+
+homies.pop();
 console.log(homies)
