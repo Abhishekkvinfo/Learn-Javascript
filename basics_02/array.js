@@ -30,3 +30,5 @@ const age1 = calcage(years[0]);
 console.log(age1);
 const age2 = calcage(years[1])
 console.log(age2)
+const age3 =calcage(years[2])
+console.log(age3)
