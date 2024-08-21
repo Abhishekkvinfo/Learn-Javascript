@@ -55,3 +55,6 @@ homies.pop();
 console.log(homies)
 
 console.log(homies.indexOf("Irfan"))
+
+console.log(homies.includes("Abhi"))
+console.log(homies.includes("bob"))
