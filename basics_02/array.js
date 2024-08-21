@@ -62,3 +62,7 @@ console.log(homies.includes("bob"))
 if(homies.includes('Abhi')){
     console.log("yah abhi is your friend ")
 }
+
+const Array1 =["abhishek", 30 ,"jose"]
+
+console.log(Array1)
