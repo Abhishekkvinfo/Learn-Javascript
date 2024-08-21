@@ -53,3 +53,5 @@ console.log(homies)
 
 homies.pop();
 console.log(homies)
+
+console.log(homies.indexOf("Irfan"))
