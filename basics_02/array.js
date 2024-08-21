@@ -26,6 +26,5 @@ const calcage = function(birthyear){
 
 const years =[2000,2001,2002,2003,2004,2005,2006,2007];
 
-const age1 = calcage([5]);
-
+const age1 = calcage(years[0]);
 console.log(age1);
