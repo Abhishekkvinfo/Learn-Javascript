@@ -5,4 +5,6 @@ const abhishek ={
     age:2024-2007,
     friends:["nithin",'abhishek',"irfan","arjun"]
 }
-console.log(abhishek)
+console.log(abhishek);
+
+console.log(abhishek.age);
