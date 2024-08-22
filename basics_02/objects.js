@@ -35,4 +35,4 @@ console.log(abhishek[interestedin])
 const jonas ={
     friends:['michael','arjun',"abhi",'anil']
 }
-console.log(jonas.friends[0])
+console.log(jonas.friends[0]);
