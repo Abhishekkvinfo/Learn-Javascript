@@ -11,3 +11,5 @@ console.log(abhishek.age);
 console.log(abhishek.firstname);
 console.log(abhishek.friends);
 console.log(abhishek.lastname);
+
+console.log(abhishek['age']);
