@@ -8,3 +8,4 @@ const abhishek ={
 console.log(abhishek);
 
 console.log(abhishek.age);
+console.log(abhishek.firstname);
