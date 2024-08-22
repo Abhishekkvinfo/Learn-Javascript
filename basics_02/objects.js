@@ -31,3 +31,8 @@ console.log(abhishek[interestedin])
 }else{
     console.log("wrong request")
 }
+
+const jonas ={
+    friends:['michael','arjun',"abhi",'anil']
+}
+console.log(jonas.friends[0])
