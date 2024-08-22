@@ -21,3 +21,4 @@ console.log(abhishek)
 const name1 = "name"
 
 console.log(abhishek['first' + name1])
+console.log(abhishek['last' + name1])
