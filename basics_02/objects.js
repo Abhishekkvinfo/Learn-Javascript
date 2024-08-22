@@ -18,3 +18,6 @@ console.log(abhishek['lastname']);
 console.log(abhishek.friends);
 
 console.log(abhishek)
+const name1 = "name"
+
+console.log(abhishek['first' + name1])
