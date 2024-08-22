@@ -26,4 +26,8 @@ console.log(abhishek['last' + name1])
 
 const interestedin = prompt("what do you want to know about abhishek firstname,job,lastname,friends,age")
 
+if(abhishek[interestedin]){
 console.log(abhishek[interestedin])
+}else{
+    console.log("wrong request")
+}
