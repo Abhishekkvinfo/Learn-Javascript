@@ -41,13 +41,20 @@
 const john = {
      
     firstname:"abhishek",
-    birthyear:2007,
+    birthyear:2006,
+    hasdriverslicense:true,
 
     calcage3: function(){
         this.age = 2024 - this.birthyear;
         return this.age ;
+    },
+    getsummery: function(){
+
+    return `${this.firstname} has ${this.hasdriverslicense ? 'a':'no'} drivers license and he is ${this.age} years old `
     }
 };
 
 console.log(john.calcage3());
 console.log(john.age)
+
+console.log(john.getsummery())
