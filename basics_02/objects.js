@@ -43,8 +43,11 @@ const john = {
     firstname:"abhishek",
     birthyear:2007,
 
-    calcage3: function(birthyear){
-        return 2024 - this.birthyear;
+    calcage3: function(){
+        this.age = 2024 - this.birthyear;
+        return this.age ;
     }
-}
-console.log(john.calcage3())
+};
+
+console.log(john.calcage3());
+console.log(john.age)
