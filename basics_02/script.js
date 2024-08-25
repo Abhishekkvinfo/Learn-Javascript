@@ -46,3 +46,4 @@ const checkavg = function(avgdolphins,avgkoalas){
  }
 
  checkavg(dolphins,koalas)
+
