@@ -25,7 +25,6 @@
 // console.log(abhishek['last' + name1])
 
 // const interestedin = prompt("what do you want to know about abhishek firstname,job,lastname,friends,age")
-
 // if(abhishek[interestedin]){
 // document.write(abhishek[interestedin])
 // }else{
@@ -38,23 +37,58 @@
 // console.log(jonas.friends[0]);
 
 
-const john = {
-     
-    firstname:"abhishek",
-    birthyear:2006,
-    hasdriverslicense:true,
+// const john = {
 
-    calcage3: function(){
-        this.age = 2024 - this.birthyear;
-        return this.age ;
-    },
-    getsummery: function(){
+//     firstname: "abhishek",
+//     birthyear: 2006,
+//     hasdriverslicense: true,
 
-    return `${this.firstname} has ${this.hasdriverslicense ? 'a':'no'} drivers license and he is ${this.age} years old `
+//     calcage3: function () {
+//         this.age = 2024 - this.birthyear;
+//         return this.age;
+//     },
+//     getsummery: function () {
+
+//         return `${this.firstname} has ${this.hasdriverslicense ? 'a' : 'no'} drivers license and he is ${this.age} years old `
+//     }
+// };
+
+// console.log(john.calcage3());
+// console.log(john.age)
+
+// console.log(john.getsummery())
+
+const mark = {
+
+    fullname:"mark miller",
+    mass:78,
+    height:1.69,
+
+    calcbmi:function(){
+
+        this.bmi =this.mass/this.height **2;
+        return this.bmi;
+
+    }
+}
+const john ={
+
+    fullname:"john smith",
+    mass:92,
+    height:1.95,
+
+    calcbmi:function(){
+
+        this.bmi =this.mass/this.height **2;
+        return this.bmi;
     }
 };
+mark.calcbmi()
+john.calcbmi()
+if(mark.bmi > john.bmi){
 
-console.log(john.calcage3());
-console.log(john.age)
+    console.log(`${mark.fullname} BMI (${mark.bmi}) is higher than ${john.fullname} BMI (${john.bmi})!`)
+}else{
 
-console.log(john.getsummery())
+    console.log(`${john.fullname} BMI (${john.bmi}) is higher than ${mark.fullname} BMI (${mark.bmi})!`)
+}
