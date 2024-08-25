@@ -44,7 +44,7 @@ const john = {
     birthyear:2007,
 
     calcage3: function(birthyear){
-        return 2024 - birthyear;
+        return 2024 - this.birthyear;
     }
 }
-console.log(john['calcage3'](1999))
+console.log(john.calcage3())
