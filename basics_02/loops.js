@@ -32,7 +32,7 @@ const details =[
     "abhishek","smilesh","jonathan","jibair"
 ]
 
-for(let i = details.length; i >=0;i--){
+for(let i = details.length-1 ; i >=0;i--){
 
     console.log(details[i])
 }
