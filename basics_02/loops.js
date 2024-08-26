@@ -34,5 +34,15 @@ const details =[
 
 for(let i = details.length-1 ; i >=0;i--){
 
-    console.log(details[i])
+    console.log(i,details[i])
+}
+
+for(let exercise=1;exercise<4;exercise++){
+
+    document.write(`starting exercise ${exercise}`)
+
+    for(let rep=1;rep<=5;rep++){
+
+        document.write(`pushup ${rep}`)
+    }
 }
