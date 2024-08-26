@@ -46,3 +46,13 @@ for(let exercise=1;exercise<4;exercise++){
         document.write(`pushup ${rep}`)
     }
 }
+
+//the while loop
+
+let i = 1;
+
+while(i<=10){
+
+    console.log("hello");
+    i++;
+}
