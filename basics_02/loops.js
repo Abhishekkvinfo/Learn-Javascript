@@ -4,13 +4,14 @@
 //     document.write(i)
 // }
 
-const person = [
-    "Abhishek",
-    "software developer",
-    "Age 18 years old"
+let person =[
+    "abhishek",
+    "aron",
+    'smilesh',
+    'appu',
+    'smilesh'
 ]
 
-for(let i=0;i<=4;i++){
-
-    document.write(person)[i]
+for(let i=0; i<person.length;i++ ){
+    console.log(person[i])
 }
