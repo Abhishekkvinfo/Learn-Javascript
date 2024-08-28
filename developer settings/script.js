@@ -13,7 +13,7 @@ const calcTempAmplitude = function (temps) {
     if (temps[i] > max) max = temps[i];
     if (temps[i] < min) min = temps[i];
   }
-  console.log(max, max);
+  console.log(max, min);
   return max - min;
 };
 const amplitude = calcTempAmplitude([22, 42, 12]);
