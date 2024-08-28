@@ -7,19 +7,14 @@ console.log("hello world");
 
 const calcTempAmplitude = function (temps) {
   let max = temps[0];
+  let min = temps[0];
+
   for (let i = 0; i < temps.length; i++) {
     if (temps[i] > max) max = temps[i];
+    if (temps[i] < min) min = temps[i];
   }
-
-  console.log(max);
+  console.log(max, max);
+  return max - min;
 };
-calcTempAmplitude([22, 14, 18]);
-
-const calcTempAmlitude = function (temp) {
-  let min = temp[0];
-  for (let i = 0; i < temp.length; i++) {
-    if (temp[i] < min) min = temp[i];
-  }
-  console.log(min);
-};
-calcTempAmlitude([22, 42, 12]);
+const amplitude = calcTempAmplitude([22, 42, 12]);
+console.log(amplitude);
