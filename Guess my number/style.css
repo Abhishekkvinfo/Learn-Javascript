@@ -60,4 +60,22 @@ body {
   height: 3px;
   background-color: aliceblue;
   margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.btn,
+input {
+  border: 0;
+  width: 150px;
+  height: 60px;
+  background-color: rgb(209, 209, 209);
+  font-size: 30px;
+
+  text-align: center;
+}
+.btn {
+  margin-left: 40px;
+}
+.guess {
+  border: 3px solid white;
 }
