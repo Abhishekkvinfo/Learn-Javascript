@@ -68,14 +68,34 @@ input {
   border: 0;
   width: 150px;
   height: 60px;
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(36, 207, 62);
   font-size: 30px;
-
+  color: white;
   text-align: center;
 }
 .btn {
   margin-left: 40px;
+  margin-bottom: 20px;
 }
 .guess {
   border: 3px solid white;
+}
+.correctnumber {
+  position: absolute;
+  left: 70%;
+  top: 440px;
+  color: white;
+}
+
+.submit {
+  margin-left: 70px;
+  margin-top: 40px;
+}
+
+.check {
+  width: 100px;
+  height: 35px;
+  font-family: myfont;
+  border: 0;
+  font-size: 20px;
 }
