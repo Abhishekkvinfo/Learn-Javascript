@@ -7,6 +7,10 @@ document.querySelector(".check").addEventListener("click", function () {
   if (display === random) {
     document.querySelector(".correct-number").textContent =
       "🎉 Congratulations YOU WON!! ";
-  } else if (display > random) document.querySelector(".correct-number").textContent = " 📉 Too high";
+  } else if (display > random) {
+    document.querySelector(".correct-number").textContent = " 📉 Too high";
+  } else if (display < random) {
+    document.querySelector(".correct-number").textContent = " 📈 Too low";
+  }
 });
 document.querySelector(".output").textContent = `${random}`;
