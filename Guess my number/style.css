@@ -10,7 +10,7 @@
 }
 body {
   font-family: myfont;
-  background-color: rgb(16, 18, 17);
+  background-color: grey;
 }
 
 .header {
@@ -73,7 +73,7 @@ input {
   border: 0;
   width: 150px;
   height: 60px;
-  background: rgb(16, 18, 17);
+  background: grey;
   font-size: 40px;
   color: rgb(107, 75, 75);
   text-align: center;

@@ -21,6 +21,8 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".correct-number").textContent = " 📉 Too high";
       document.querySelector(".score").textContent = `💯Score :${score}`;
       score--;
+      document.querySelector("body").style.backgroundColor = "grey";
+      document.querySelector(".display").style.backgroundColor = "grey";
     } else {
       document.querySelector(".correct-number").textContent =
         "😑😑 YOU LOST THE GAME";
@@ -32,6 +34,8 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".correct-number").textContent = " 📈 Too low";
       score--;
       document.querySelector(".score").textContent = `💯Score :${score}`;
+      document.querySelector("body").style.backgroundColor = "grey";
+      document.querySelector(".display").style.backgroundColor = "grey";
     } else {
       document.querySelector(".correct-number").textContent =
         "😑😑 YOU LOST THE GAME";
