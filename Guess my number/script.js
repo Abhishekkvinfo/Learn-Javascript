@@ -10,15 +10,23 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (display === 0) {
     document.querySelector(".correct-number").textContent = "⛔️ no number";
   } else if (display > random) {
-    document.querySelector(".correct-number").textContent = " 📉 Too high";
-    score--;
-    document.querySelector(".score").textContent = `💯Score :${score}`;
-    document.querySelector(".correct-number").textContent =
-      "😑 YOU LOST THE GAME";
+    if (score > 0) {
+      document.querySelector(".correct-number").textContent = " 📉 Too high";
+      document.querySelector(".score").textContent = `💯Score :${score}`;
+      score--;
+    } else {
+      document.querySelector(".correct-number").textContent =
+        "😑😑 YOU LOST THE GAME";
+    }
   } else if (display < random) {
-    document.querySelector(".correct-number").textContent = " 📈 Too low";
-    score--;
-    document.querySelector(".score").textContent = `💯Score :${score}`;
+    if (score > 0) {
+      document.querySelector(".correct-number").textContent = " 📈 Too low";
+      score--;
+      document.querySelector(".score").textContent = `💯Score :${score}`;
+    } else {
+      document.querySelector(".correct-number").textContent =
+        "😑😑 YOU LOST THE GAME";
+    }
   }
 });
 document.querySelector(".output").textContent = `${random}`;
