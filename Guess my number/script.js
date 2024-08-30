@@ -3,12 +3,14 @@
 let random = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let Highscore = 0;
+let displaymessage = function (message) {
+  document.querySelector(".correct-number").textContent = message;
+};
 document.querySelector(".check").addEventListener("click", function () {
   const display = Number(document.querySelector(".display").value);
   // when player wins
   if (display === random) {
-    document.querySelector(".correct-number").textContent =
-      "🎉 Congratulations YOU WON!! ";
+    displaymessage("🎉 Congratulations YOU WON!! ");
     document.querySelector("body").style.backgroundColor = "green";
     document.querySelector(".display").style.backgroundColor = "green";
     document.querySelector(".output").style.width = "20rem";
@@ -20,20 +22,19 @@ document.querySelector(".check").addEventListener("click", function () {
     }
     // when there is no input
   } else if (display === 0) {
-    document.querySelector(".correct-number").textContent = "⛔️ no number";
+    displaymessage("⛔️ no number");
 
-    // when its high
+    // when its high or low
   } else if (display !== random) {
     if (score > 0) {
-      document.querySelector(".correct-number").textContent =
-        display > random ? " 📉 Too high" : "📈 Too low";
+      // document.querySelector(".correct-number").textContent =
+      displaymessage(display > random ? " 📉 Too high" : "📈 Too low");
       document.querySelector(".score").textContent = `💯Score :${score}`;
       score--;
       document.querySelector("body").style.backgroundColor = "grey";
       document.querySelector(".display").style.backgroundColor = "grey";
     } else {
-      document.querySelector(".correct-number").textContent =
-        "😑😑 YOU LOST THE GAME";
+      displaymessage("😑😑 YOU LOST THE GAME");
     }
   }
 });
@@ -42,5 +43,5 @@ document.querySelector(".Again").addEventListener("click", function () {
   document.querySelector("body").style.backgroundColor = "black";
   score = 20;
   random = Math.trunc(Math.random() * 20) + 1;
-  document.querySelector(".correct-number").textContent = " 🎮 Start the game";
+  displaymessage(" 🎮 Start the game");
 });
