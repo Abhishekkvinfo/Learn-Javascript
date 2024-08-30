@@ -23,24 +23,12 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".correct-number").textContent = "⛔️ no number";
 
     // when its high
-  } else if (display > random) {
+  } else if (display !== random) {
     if (score > 0) {
-      document.querySelector(".correct-number").textContent = " 📉 Too high";
-      document.querySelector(".score").textContent = `💯Score :${score}`;
-      score--;
-      document.querySelector("body").style.backgroundColor = "grey";
-      document.querySelector(".display").style.backgroundColor = "grey";
-    } else {
       document.querySelector(".correct-number").textContent =
-        "😑😑 YOU LOST THE GAME";
-    }
-
-    //when its too low
-  } else if (display < random) {
-    if (score > 0) {
-      document.querySelector(".correct-number").textContent = " 📈 Too low";
-      score--;
+        display > random ? " 📉 Too high" : "📈 Too low";
       document.querySelector(".score").textContent = `💯Score :${score}`;
+      score--;
       document.querySelector("body").style.backgroundColor = "grey";
       document.querySelector(".display").style.backgroundColor = "grey";
     } else {
