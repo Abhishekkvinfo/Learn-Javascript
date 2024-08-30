@@ -1,6 +1,6 @@
 "use strict";
 
-const random = Math.trunc(Math.random() * 20) + 1;
+let random = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 document.querySelector(".check").addEventListener("click", function () {
   const display = Number(document.querySelector(".display").value);
@@ -11,6 +11,7 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector("body").style.backgroundColor = "green";
     document.querySelector(".display").style.backgroundColor = "green";
     document.querySelector(".output").style.width = "20rem";
+    document.querySelector(".output").textContent = `${random}`;
     // when there is no input
   } else if (display === 0) {
     document.querySelector(".correct-number").textContent = "⛔️ no number";
@@ -42,4 +43,10 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   }
 });
-document.querySelector(".output").textContent = `${random}`;
+
+document.querySelector(".Again").addEventListener("click", function () {
+  document.querySelector("body").style.backgroundColor = "black";
+  score = 20;
+  random = Math.trunc(Math.random() * 20) + 1;
+  document.querySelector(".correct-number").textContent = " 🎮 Start the game";
+});
