@@ -55,6 +55,5 @@ document.querySelector(".Again").addEventListener("click", function () {
   score = 20;
   random = Math.trunc(Math.random() * 20) + 1;
   document.querySelector(".correct-number").textContent = " 🎮 Start the game";
-  document.querySelector(".high").textContent = "🔥 Highscore : 0";
 });
 console.log(random);
