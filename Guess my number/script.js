@@ -56,4 +56,3 @@ document.querySelector(".Again").addEventListener("click", function () {
   random = Math.trunc(Math.random() * 20) + 1;
   document.querySelector(".correct-number").textContent = " 🎮 Start the game";
 });
-console.log(random);
