@@ -28,10 +28,11 @@ body {
   background-color: white;
   padding: 40px;
   margin: 40px;
-  height: 400px;
+
   line-height: 1.7rem;
   border-radius: 10px;
 }
-.modal h1 {
+
+#heading {
   margin-bottom: 20px;
 }
