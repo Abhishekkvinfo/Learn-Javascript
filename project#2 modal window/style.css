@@ -24,3 +24,14 @@ body {
   color: rgb(81, 80, 80);
   border: 0;
 }
+.modal {
+  background-color: white;
+  padding: 40px;
+  margin: 40px;
+  height: 400px;
+  line-height: 1.7rem;
+  border-radius: 10px;
+}
+.modal h1 {
+  margin-bottom: 20px;
+}
