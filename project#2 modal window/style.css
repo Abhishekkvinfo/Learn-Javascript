@@ -19,10 +19,7 @@ body {
   background-color: white;
   display: flex;
   justify-content: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 15px 10px;
   border-radius: 50px;
   color: rgb(81, 80, 80);
 }
