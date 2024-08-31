@@ -28,11 +28,22 @@ body {
   background-color: white;
   padding: 40px;
   margin: 40px;
-
   line-height: 1.7rem;
   border-radius: 10px;
+  position: absolute;
 }
 
 #heading {
   margin-bottom: 20px;
+}
+.close-modal {
+  position: absolute;
+  left: 610px;
+  border: 0;
+  font-size: 25px;
+  background-color: white;
+}
+
+.hidden {
+  display: none;
 }
