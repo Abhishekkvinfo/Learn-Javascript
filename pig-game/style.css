@@ -3,7 +3,10 @@
   margin: 0%;
   box-sizing: border-box;
 }
-
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.654);
+}
 .container {
   display: flex;
   justify-content: center;
@@ -16,18 +19,31 @@
   height: 500px;
   border-radius: 10px;
   display: flex;
+  position: absolute;
 }
 .box1 {
   width: 450px;
   height: 500px;
-  background-color: rgb(173, 178, 182);
+  background-color: rgba(255, 255, 255, 0.546);
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
 }
 .box2 {
   width: 450px;
   height: 500px;
-  background-color: rgb(58, 100, 134);
+  background-color: rgba(255, 255, 255, 0.338);
   border-end-end-radius: 10px;
   border-start-end-radius: 10px;
+}
+.player1 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 25px;
+}
+.score {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: rgb(231, 98, 120);
 }
