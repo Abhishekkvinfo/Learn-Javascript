@@ -93,3 +93,14 @@ body {
   padding-top: 10px;
   color: white;
 }
+
+.current1 {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 165px;
+}
+.current {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 165px;
+}
