@@ -96,11 +96,33 @@ body {
 
 .current1 {
   position: absolute;
-  margin-top: 100px;
+  margin-top: 130px;
   margin-left: 165px;
 }
 .current {
   position: absolute;
-  margin-top: 100px;
+  margin-top: 130px;
   margin-left: 165px;
+}
+.roll {
+  width: 130px;
+  height: 30px;
+  position: absolute;
+  top: 280px;
+  left: 385px;
+  border: 0;
+  color: rgba(0, 0, 0, 0.669);
+  font-weight: 550;
+  border-radius: 20px;
+}
+.hold {
+  width: 130px;
+  height: 30px;
+  position: absolute;
+  top: 320px;
+  left: 385px;
+  border: 0;
+  color: rgba(0, 0, 0, 0.669);
+  font-weight: 550;
+  border-radius: 20px;
 }
