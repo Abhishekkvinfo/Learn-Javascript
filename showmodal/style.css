@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(9, 90, 90);
+}
+.showmodal {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.showbtn {
+  border: 0;
+  padding: 17px;
+  border-radius: 50px;
+  background-color: white;
+}
