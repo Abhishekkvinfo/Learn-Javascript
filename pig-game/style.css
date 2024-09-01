@@ -63,3 +63,33 @@ body {
   margin-top: 20px;
   color: rgb(213, 53, 80);
 }
+.newgame {
+  width: 130px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  left: 385px;
+  border: 0;
+  color: rgba(0, 0, 0, 0.669);
+  font-weight: 550;
+  border-radius: 20px;
+}
+.current {
+  width: 120px;
+  height: 65px;
+  background-color: rgb(213, 53, 80);
+  border-radius: 10px;
+}
+
+.current1 {
+  width: 120px;
+  height: 65px;
+  background-color: rgb(213, 53, 80);
+  border-radius: 10px;
+}
+.current0 {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 10px;
+  color: white;
+}
