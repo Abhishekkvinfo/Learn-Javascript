@@ -111,3 +111,9 @@ body {
 .hidden {
   display: none;
 }
+.cs {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 25px;
+  color: white;
+}

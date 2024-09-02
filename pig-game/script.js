@@ -7,6 +7,9 @@ const dice1 = document.querySelector(".dice");
 const btnNew = document.querySelector(".newgame");
 const btnRoll = document.querySelector(".roll");
 const btnHOLD = document.querySelector(".hold");
+const currentstore = document.querySelector("#currentscore1");
+const player1storedscore = document.querySelector(".score");
+let currentscore = 0;
 
 //starting conditions
 
@@ -19,4 +22,14 @@ btnRoll.addEventListener("click", function () {
   const dice = Math.trunc(Math.random() * 6) + 1;
   dice1.classList.remove("hidden");
   dice1.src = `dice-${dice}.png`;
+
+  if (dice !== 1) {
+    currentscore += dice;
+    currentstore.textContent = currentscore;
+  } else {
+  }
+});
+
+btnHOLD.addEventListener("click", function () {
+  player1storedscore.textContent = currentscore;
 });
