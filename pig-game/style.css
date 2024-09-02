@@ -35,7 +35,7 @@ body {
   border-end-end-radius: 10px;
   border-start-end-radius: 10px;
 }
-.player1 {
+.player {
   text-align: center;
   margin-top: 60px;
   font-size: 25px;
@@ -49,20 +49,7 @@ body {
   margin-top: 20px;
   color: rgb(208, 64, 88);
 }
-.player2 {
-  text-align: center;
-  margin-top: 60px;
-  font-size: 25px;
-  color: black;
-  font-weight: 550;
-}
-.score0 {
-  text-align: center;
-  font-size: 60px;
-  font-weight: 400;
-  margin-top: 20px;
-  color: rgb(213, 53, 80);
-}
+
 .newgame {
   width: 130px;
   height: 30px;
@@ -81,12 +68,6 @@ body {
   border-radius: 10px;
 }
 
-.current1 {
-  width: 120px;
-  height: 65px;
-  background-color: rgb(213, 53, 80);
-  border-radius: 10px;
-}
 .current0 {
   text-align: center;
   font-size: 13px;
@@ -94,11 +75,6 @@ body {
   color: white;
 }
 
-.current1 {
-  position: absolute;
-  margin-top: 130px;
-  margin-left: 165px;
-}
 .current {
   position: absolute;
   margin-top: 130px;
