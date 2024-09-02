@@ -13,13 +13,10 @@ const btnHOLD = document.querySelector(".hold");
 score0.textContent = "0";
 score1.textContent = "0";
 
-dice1.classList.remove("dice");
-
 // rolling dice
 
 btnRoll.addEventListener("click", function () {
   const dice = Math.trunc(Math.random() * 6) + 1;
-  dice1.classList.add("hidden");
-  dice1.src = `dice-${dice}`;
-  console.log(dice);
+  dice1.classList.remove("hidden");
+  dice1.src = `dice-${dice}.png`;
 });
