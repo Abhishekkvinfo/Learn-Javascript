@@ -1,13 +1,25 @@
 "use strict";
 
+//selecting elements
 const score0 = document.querySelector("#score1");
 const score1 = document.querySelector("#score2");
-const dice = document.querySelector(".dice");
+const dice1 = document.querySelector(".dice");
 const btnNew = document.querySelector(".newgame");
 const btnRoll = document.querySelector(".roll");
 const btnHOLD = document.querySelector(".hold");
 
+//starting conditions
+
 score0.textContent = "0";
 score1.textContent = "0";
 
-dice.classList.remove("dice");
+dice1.classList.remove("dice");
+
+// rolling dice
+
+btnRoll.addEventListener("click", function () {
+  const dice = Math.trunc(Math.random() * 6) + 1;
+  dice1.classList.add("hidden");
+  dice1.src = `dice-${dice}`;
+  console.log(dice);
+});
