@@ -108,3 +108,6 @@ body {
   top: 180px;
   left: 420px;
 }
+.hidden {
+  display: none;
+}
