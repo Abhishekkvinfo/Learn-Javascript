@@ -45,11 +45,12 @@ btnHOLD.addEventListener("click", function () {
 });
 
 btnNew.addEventListener("click", function () {
-  let currentscore = 0;
-  let activeplayer = 0;
-  let scores = [0, 0];
+  currentscore = 0;
+  activeplayer = 0;
+  scores = [0, 0];
   score0.textContent = "0";
   score1.textContent = "0";
   document.querySelector("#currentscore-0").textContent = "0";
   document.querySelector("#currentscore-1").textContent = "0";
+  dice1.classList.add("hidden");
 });
