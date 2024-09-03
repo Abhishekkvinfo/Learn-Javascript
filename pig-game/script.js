@@ -7,10 +7,12 @@ const dice1 = document.querySelector(".dice");
 const btnNew = document.querySelector(".newgame");
 const btnRoll = document.querySelector(".roll");
 const btnHOLD = document.querySelector(".hold");
-const currentstore = document.querySelector("#currentscore1");
+const currentscore0 = document.querySelector("#currentscore-0");
+const currentscore1 = document.querySelector("#currentscore-1");
 const player1storedscore = document.querySelector(".score");
 let currentscore = 0;
-
+let activeplayer = 0;
+const scores = [0, 0];
 //starting conditions
 
 score0.textContent = "0";
@@ -25,11 +27,12 @@ btnRoll.addEventListener("click", function () {
 
   if (dice !== 1) {
     currentscore += dice;
-    currentstore.textContent = currentscore;
+    document.getElementById(`currentscore-${activeplayer}`).textContent =
+      currentscore;
   } else {
+    activeplayer = 1;
+    currentscore = 0;
+    document.getElementsByClassid(`currentscore-${activeplayer}`).textContent =
+      currentscore;
   }
-});
-
-btnHOLD.addEventListener("click", function () {
-  player1storedscore.textContent = currentscore;
 });
