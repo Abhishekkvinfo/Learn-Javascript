@@ -30,7 +30,7 @@ btnRoll.addEventListener("click", function () {
     document.getElementById(`currentscore-${activeplayer}`).textContent =
       currentscore;
   } else {
-    activeplayer = 1;
+    activeplayer = activeplayer === 0 ? 1 : 0;
     currentscore = 0;
     document.getElementsByClassid(`currentscore-${activeplayer}`).textContent =
       currentscore;
