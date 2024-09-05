@@ -32,6 +32,7 @@ console.log(main, secondary);
 
 [main, secondary] = [secondary, main];
 console.log(main, secondary);
+
 const [starterindex, mainindex] = restaurant.order(2, 0);
 
 console.log(starterindex, mainindex);
