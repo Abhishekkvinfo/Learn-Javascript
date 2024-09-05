@@ -10,8 +10,11 @@ const restaurant = {
 
 const arr = [2, 6, 8];
 
-const a = arr[0];
+const a = arr[2];
 const b = arr[1];
-const c = arr[2];
+const c = arr[0];
 
 console.log(a, b, c);
+
+const [x, y, z] = arr;
+console.log(x, y, z);
