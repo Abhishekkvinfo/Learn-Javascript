@@ -6,6 +6,9 @@ const restaurant = {
   categories: ["italian", "indian", "american"],
   startermenu: ["sharjah shake", "light lime", "garlic bread"],
   mainmenu: ["pizza", "pasta", "risotto"],
+  order: function (starterindex, mainindex) {
+    return [this.startermenu[starterindex], this.mainmenu[mainindex]];
+  },
 };
 
 const arr = [2, 6, 8];
@@ -29,3 +32,6 @@ console.log(main, secondary);
 
 [main, secondary] = [secondary, main];
 console.log(main, secondary);
+const [starterindex, mainindex] = restaurant.order(2, 0);
+
+console.log(starterindex, mainindex);
