@@ -36,3 +36,9 @@ console.log(main, secondary);
 const [starterindex, mainindex] = restaurant.order(2, 0);
 
 console.log(starterindex, mainindex);
+
+const nested = [1, 3, 4, [3, 5]];
+
+const [p, , r, [j, k]] = nested;
+
+console.log([p, j, k]);
