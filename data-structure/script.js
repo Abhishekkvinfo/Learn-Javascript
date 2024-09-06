@@ -42,3 +42,7 @@ const nested = [1, 3, 4, [3, 5]];
 const [p, , r, [j, k]] = nested;
 
 console.log([p, j, k]);
+
+const [s = 1, h = 1, l = 7] = [7, 8];
+
+console.log(s, h);
