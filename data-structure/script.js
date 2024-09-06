@@ -1,8 +1,8 @@
 "use strict";
 
 const restaurant = {
-  name: "classico italiano",
-  location: "kaladi 7th street 23",
+  name1: "classico italiano",
+  place: "kaladi 7th street 23",
   categories: ["italian", "indian", "american"],
   startermenu: ["sharjah shake", "light lime", "garlic bread"],
   mainmenu: ["pizza", "pasta", "risotto"],
@@ -46,3 +46,6 @@ console.log([p, j, k]);
 const [s = 1, h = 1, l = 7] = [7, 8];
 
 console.log(s, h);
+
+const { name1, categories, place } = restaurant;
+console.log(name1, categories, location);
