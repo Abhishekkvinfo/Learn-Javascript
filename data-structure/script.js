@@ -49,3 +49,7 @@ console.log(s, h);
 
 const { name1, categories, place } = restaurant;
 console.log(name1, categories, location);
+
+const { name1: myname, categories: cate, place: kaladi } = restaurant;
+
+console.log(myname, cate, kaladi);
