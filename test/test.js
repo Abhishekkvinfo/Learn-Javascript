@@ -13,3 +13,7 @@ const arr = [2, 6, 8];
 const a = arr[0];
 const b = arr[1];
 const c = arr[2];
+
+const { categories: cate, name: myname } = restaurant;
+
+console.log(cate, myname);
