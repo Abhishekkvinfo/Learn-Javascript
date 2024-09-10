@@ -36,3 +36,8 @@ const nested = [2, 5, [2, 4]];
 
 const [i, , [j, h]] = nested;
 console.log(i, j, h);
+
+//default values
+
+const [p = 1, q = 1, r = 1] = [2, 7];
+console.log(p, q, r);
