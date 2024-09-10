@@ -29,3 +29,10 @@ console.log(main, secondary);
 
 const [starter, maincourse] = restaurant.order(0, 2);
 console.log(starter, maincourse);
+
+//nested destructuring
+
+const nested = [2, 5, [2, 4]];
+
+const [i, , [j, h]] = nested;
+console.log(i, j, h);
