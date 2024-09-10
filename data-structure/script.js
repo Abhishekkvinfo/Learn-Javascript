@@ -6,60 +6,70 @@ const restaurant = {
   categories: ["italian", "indian", "american"],
   startermenu: ["sharjah shake", "light lime", "garlic bread"],
   mainmenu: ["pizza", "pasta", "risotto"],
+  openinghours: {
+    mon: {
+      open: "9:00AM",
+      close: "8:00PM",
+    },
+  },
   order: function (starterindex, mainindex) {
     return [this.startermenu[starterindex], this.mainmenu[mainindex]];
   },
+
+  orderdelivery: function (restaurant) {
+    console.log(restaurant);
+  },
 };
 
-const arr = [2, 6, 8];
+// const arr = [2, 6, 8];
 
-const a = arr[2];
-const b = arr[1];
-const c = arr[0];
+// const a = arr[2];
+// const b = arr[1];
+// const c = arr[0];
 
-console.log(a, b, c);
+// console.log(a, b, c);
 
-const [x, y, z] = arr;
-console.log(x, y, z);
+// const [x, y, z] = arr;
+// console.log(x, y, z);
 
-let [main, , secondary] = restaurant.categories;
-console.log(main, secondary);
+// let [main, , secondary] = restaurant.categories;
+// console.log(main, secondary);
 
-// const temp = main;
-// main = secondary;
-// secondary = main;
-// console.log(main, secondary)
+// // const temp = main;
+// // main = secondary;
+// // secondary = main;
+// // console.log(main, secondary)
 
-[main, secondary] = [secondary, main];
-console.log(main, secondary);
+// [main, secondary] = [secondary, main];
+// console.log(main, secondary);
 
-const [starterindex, mainindex] = restaurant.order(2, 0);
+// const [starterindex, mainindex] = restaurant.order(2, 0);
 
-console.log(starterindex, mainindex);
+// console.log(starterindex, mainindex);
 
-const nested = [1, 3, 4, [3, 5]];
+// const nested = [1, 3, 4, [3, 5]];
 
-const [p, , r, [j, k]] = nested;
+// const [p, , r, [j, k]] = nested;
 
-console.log([p, j, k]);
+// console.log([p, j, k]);
 
-const [s = 1, h = 1, l = 7] = [7, 8];
+// const [s = 1, h = 1, l = 7] = [7, 8];
 
-console.log(s, h);
+// console.log(s, h);
 
-const { name1, categories, place } = restaurant;
-console.log(name1, categories, location);
+// const { name1, categories, place, openinghours } = restaurant;
+// console.log(name1, categories, location);
 
-const { name1: myname, categories: cate, place: kaladi } = restaurant;
+// const { name1: myname, categories: cate, place: kaladi } = restaurant;
 
-console.log(myname, cate, kaladi);
+// console.log(myname, cate, kaladi);
 
-let q = 111;
-let w = 222;
+// let q = 111;
+// let w = 222;
 
-const Obj = {
-  q: 23,
-  w: 33,
-};
-({ q, x } = Obj);
-console.log(q, w);
+// const Obj = {
+//   q: 23,
+//   w: 33,
+// };
+// ({ q, x } = Obj);
+// console.log(q, w);

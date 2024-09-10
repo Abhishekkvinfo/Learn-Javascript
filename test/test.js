@@ -8,12 +8,8 @@ const restaurant = {
   mainmenu: ["pizza", "pasta", "risotto"],
 };
 
-const arr = [2, 6, 8];
+const arr = [2, 4, 3];
 
-const a = arr[0];
-const b = arr[1];
-const c = arr[2];
+const [x, y, z] = arr;
 
-const { categories: cate, name: myname } = restaurant;
-
-console.log(cate, myname);
+console.log(x, y, z);
