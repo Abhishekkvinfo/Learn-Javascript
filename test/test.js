@@ -25,5 +25,7 @@ main = secondary;
 secondary = main;
 
 console.log(main, secondary);
+//receive 2 return values from a function
 
-console.log(restaurant.order(0, 2));
+const [starter, maincourse] = restaurant.order(0, 2);
+console.log(starter, maincourse);
