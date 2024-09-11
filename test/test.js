@@ -6,6 +6,20 @@ const restaurant = {
   categories: ["italian", "indian", "american"],
   startermenu: ["sharjah shake", "light lime", "garlic bread"],
   mainmenu: ["pizza", "pasta", "risotto"],
+  openinghours: {
+    mon: {
+      open: 9,
+      close: 8,
+    },
+    tue: {
+      open: 9,
+      close: 8,
+    },
+    wed: {
+      open: 9,
+      close: 8,
+    },
+  },
   order: function (starterindex, mainindex) {
     return [this.startermenu[starterindex], this.mainmenu[mainindex]];
   },
@@ -41,3 +55,5 @@ console.log(i, j, h);
 
 const [p = 1, q = 1, r = 1] = [2, 7];
 console.log(p, q, r);
+
+//object destructuring...
