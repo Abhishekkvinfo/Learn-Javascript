@@ -84,5 +84,7 @@ console.log(a, b);
 
 // nested objects
 
-const { mon } = openinghours;
-console.log(mon);
+const {
+  mon: { open: o, close: c },
+} = openinghours;
+console.log(o, c);
