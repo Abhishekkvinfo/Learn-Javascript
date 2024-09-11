@@ -67,3 +67,7 @@ const {
   openinghours: workinghours,
 } = restaurant;
 console.log(restaurantname, tags, workinghours);
+
+const { menu = [], startermenu = [] } = restaurant;
+
+console.log(menu, startermenu);
