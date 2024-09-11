@@ -23,6 +23,9 @@ const restaurant = {
   order: function (starterindex, mainindex) {
     return [this.startermenu[starterindex], this.mainmenu[mainindex]];
   },
+  orderdelivery: function (obj) {
+    console.log(obj);
+  },
 };
 
 // const arr = [2, 4, 3];
@@ -88,3 +91,10 @@ const {
   mon: { open: o, close: c },
 } = openinghours;
 console.log(o, c);
+
+restaurant.orderdelivery({
+  name: "classico italiano",
+  starterindex: 2,
+  mainindex: 2,
+  address: "kaladi",
+});
