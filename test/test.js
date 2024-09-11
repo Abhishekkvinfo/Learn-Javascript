@@ -81,3 +81,8 @@ const obj = { a: 12, b: 33, c: 44 };
 
 ({ a, b } = obj);
 console.log(a, b);
+
+// nested objects
+
+const { mon } = openinghours;
+console.log(mon);
