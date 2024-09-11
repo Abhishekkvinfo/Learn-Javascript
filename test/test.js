@@ -25,35 +25,38 @@ const restaurant = {
   },
 };
 
-const arr = [2, 4, 3];
-const [x, y, z] = arr;
+// const arr = [2, 4, 3];
+// const [x, y, z] = arr;
 
-console.log(x, y, z);
+// console.log(x, y, z);
 
-let [main, , secondary] = restaurant.categories;
-console.log(main, secondary);
+// let [main, , secondary] = restaurant.categories;
+// console.log(main, secondary);
 
 // switching variables
 
-main = secondary;
-secondary = main;
+// main = secondary;
+// secondary = main;
 
-console.log(main, secondary);
+// console.log(main, secondary);
 //receive 2 return values from a function
 
-const [starter, maincourse] = restaurant.order(0, 2);
-console.log(starter, maincourse);
+// const [starter, maincourse] = restaurant.order(0, 2);
+// console.log(starter, maincourse);
 
 //nested destructuring
 
-const nested = [2, 5, [2, 4]];
+// const nested = [2, 5, [2, 4]];
 
-const [i, , [j, h]] = nested;
-console.log(i, j, h);
+// const [i, , [j, h]] = nested;
+// console.log(i, j, h);
 
 //default values
 
-const [p = 1, q = 1, r = 1] = [2, 7];
-console.log(p, q, r);
+// const [p = 1, q = 1, r = 1] = [2, 7];
+// console.log(p, q, r);
 
 //object destructuring...
+
+const { name, categories, openinghours } = restaurant;
+console.log(name, categories, openinghours);
