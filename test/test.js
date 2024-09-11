@@ -60,3 +60,10 @@ const restaurant = {
 
 const { name, categories, openinghours } = restaurant;
 console.log(name, categories, openinghours);
+
+const {
+  name: restaurantname,
+  categories: tags,
+  openinghours: workinghours,
+} = restaurant;
+console.log(restaurantname, tags, workinghours);
