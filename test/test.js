@@ -49,7 +49,7 @@ const restaurant = {
 // const nested = [2, 5, [2, 4]];
 
 // const [i, , [j, h]] = nested;
-// console.log(i, j, h);
+// console.log(i, j,h);
 
 //default values
 
@@ -68,6 +68,16 @@ const {
 } = restaurant;
 console.log(restaurantname, tags, workinghours);
 
+// default values
 const { menu = [], startermenu = [] } = restaurant;
 
 console.log(menu, startermenu);
+
+// mutatating variables
+
+let a = 111;
+let b = 222;
+const obj = { a: 12, b: 33, c: 44 };
+
+({ a, b } = obj);
+console.log(a, b);
