@@ -98,3 +98,7 @@ restaurant.orderdelivery({
   mainindex: 2,
   address: "kaladi",
 });
+
+const array = [5, 6, 7];
+const bad = [1, 2, ...array];
+console.log(bad);
