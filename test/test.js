@@ -102,3 +102,8 @@ restaurant.orderdelivery({
 const array = [5, 6, 7];
 const bad = [1, 2, ...array];
 console.log(bad);
+
+let num = [4, 5, 5];
+let element = [1, 2, 3, ...num];
+
+console.log(element);
