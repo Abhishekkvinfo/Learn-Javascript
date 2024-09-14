@@ -115,3 +115,6 @@ console.log(newmenu);
 
 const mainmenucopy = [...restaurant.mainmenu];
 console.log(mainmenucopy);
+
+const join = [...restaurant.mainmenu, ...restaurant.categories];
+console.log(join);
