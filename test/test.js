@@ -107,3 +107,6 @@ let num = [4, 5, 5];
 let element = [1, 2, 3, ...num];
 
 console.log(element);
+
+const newmenu = [...restaurant.mainmenu, "biriyani", "porichadh"];
+console.log(newmenu);
