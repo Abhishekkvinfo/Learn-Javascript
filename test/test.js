@@ -110,3 +110,8 @@ console.log(element);
 
 const newmenu = [...restaurant.mainmenu, "biriyani", "porichadh"];
 console.log(newmenu);
+
+//copy array
+
+const mainmenucopy = [...restaurant.mainmenu];
+console.log(mainmenucopy);
