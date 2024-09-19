@@ -104,3 +104,4 @@ const arr = [7, 9, 5];
 const newarr = [1, 2, ...arr];
 
 console.log(newarr);
+console.log(...newarr);
