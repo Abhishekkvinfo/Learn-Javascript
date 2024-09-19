@@ -99,25 +99,8 @@ restaurant.orderdelivery({
   address: "kaladi",
 });
 
-const array = [5, 6, 7];
-const bad = [1, 2, ...array];
-console.log(bad);
+const arr = [7, 9, 5];
 
-let num = [4, 5, 5];
-let element = [1, 2, 3, ...num];
+const newarr = [1, 2, ...arr];
 
-console.log(element);
-
-const newmenu = [...restaurant.mainmenu, "biriyani", "porichadh"];
-console.log(newmenu);
-
-//copy array
-
-const mainmenucopy = [...restaurant.mainmenu];
-console.log(mainmenucopy);
-
-const join = [...restaurant.mainmenu, ...restaurant.categories];
-console.log(join);
-
-const add = [...restaurant.location, ...restaurant.name];
-console.log(add);
+console.log(newarr);
