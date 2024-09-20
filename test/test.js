@@ -26,6 +26,9 @@ const restaurant = {
   orderdelivery: function (obj) {
     console.log(obj);
   },
+  orderpasta: function (ing1, ing2, ing3) {
+    console.log(`here is your tasty pasta with ${ing1},${ing2}, and ${ing3}`);
+  },
 };
 
 // const arr = [2, 4, 3];
@@ -122,3 +125,19 @@ const str = "kim boy";
 const letters = [...str];
 console.log(letters);
 console.log(...str);
+
+const ing = [
+  // prompt("lets make pasta! ingredient 1 ?"),
+  // prompt("ingredient 2 ?"),
+  // prompt("ingredient 3 ?"),
+];
+console.log(ing);
+
+restaurant.orderpasta(...ing);
+
+const newrestaurant = { ...restaurant };
+console.log(newrestaurant);
+
+newrestaurant.name = "teashore";
+console.log(newrestaurant.name);
+console.log(restaurant.name);
