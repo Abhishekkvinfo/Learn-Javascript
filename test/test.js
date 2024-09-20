@@ -115,3 +115,10 @@ console.log(join);
 
 const copy = [...restaurant.mainmenu];
 console.log(copy);
+
+//strings using spread operator
+
+const str = "kim boy";
+const letters = [...str];
+console.log(letters);
+console.log(...str);
