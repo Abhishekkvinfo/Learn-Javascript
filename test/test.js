@@ -105,3 +105,8 @@ const newarr = [1, 2, ...arr];
 
 console.log(newarr);
 console.log(...newarr);
+
+// join arrays using spread operator ..
+
+const join = [...restaurant.mainmenu, ...restaurant.startermenu];
+console.log(join);
