@@ -110,3 +110,8 @@ console.log(...newarr);
 
 const join = [...restaurant.mainmenu, ...restaurant.startermenu];
 console.log(join);
+
+// copying  array using spread operator
+
+const copy = [...restaurant.mainmenu];
+console.log(copy);
