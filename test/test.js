@@ -166,3 +166,5 @@ console.log("abhi" || 3);
 console.log(0 || "abhi");
 console.log(null || undefined);
 console.log(undefined || null);
+
+console.log(restaurant.name || 10);
