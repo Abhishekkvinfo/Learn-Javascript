@@ -141,3 +141,8 @@ console.log(newrestaurant);
 newrestaurant.name = "teashore";
 console.log(newrestaurant.name);
 console.log(restaurant.name);
+
+//rest pattern and parameters
+
+const [x, y, ...others] = [1, 2, 3, 4, 5];
+console.log(x, y, others);
