@@ -64,98 +64,105 @@ const restaurant = {
 
 //object destructuring...
 
-const { name, categories, openinghours } = restaurant;
-console.log(name, categories, openinghours);
+// const { name, categories, openinghours } = restaurant;
+// console.log(name, categories, openinghours);
 
-const {
-  name: restaurantname,
-  categories: tags,
-  openinghours: workinghours,
-} = restaurant;
-console.log(restaurantname, tags, workinghours);
+// const {
+//   name: restaurantname,
+//   categories: tags,
+//   openinghours: workinghours,
+// } = restaurant;
+// console.log(restaurantname, tags, workinghours);
 
-// default values
-const { menu = [], startermenu = [] } = restaurant;
+// // default values
+// const { menu = [], startermenu = [] } = restaurant;
 
-console.log(menu, startermenu);
+// console.log(menu, startermenu);
 
-// mutatating variables
+// // mutatating variables
 
-let a = 111;
-let b = 222;
-const obj = { a: 12, b: 33, c: 44 };
+// let a = 111;
+// let b = 222;
+// const obj = { a: 12, b: 33, c: 44 };
 
-({ a, b } = obj);
-console.log(a, b);
+// ({ a, b } = obj);
+// console.log(a, b);
 
-// nested objects
+// // nested objects
 
-const {
-  mon: { open: o, close: c },
-} = openinghours;
-console.log(o, c);
+// const {
+//   mon: { open: o, close: c },
+// } = openinghours;
+// console.log(o, c);
 
-restaurant.orderdelivery({
-  name: "classico italiano",
-  starterindex: 2,
-  mainindex: 2,
-  address: "kaladi",
-});
+// restaurant.orderdelivery({
+//   name: "classico italiano",
+//   starterindex: 2,
+//   mainindex: 2,
+//   address: "kaladi",
+// });
 
-const arr = [7, 9, 5];
+// const arr = [7, 9, 5];
 
-const newarr = [1, 2, ...arr];
+// const newarr = [1, 2, ...arr];
 
-console.log(newarr);
-console.log(...newarr);
+// console.log(newarr);
+// console.log(...newarr);
 
-// join arrays using spread operator ..
+// // join arrays using spread operator ..
 
-const join = [...restaurant.mainmenu, ...restaurant.startermenu];
-console.log(join);
+// const join = [...restaurant.mainmenu, ...restaurant.startermenu];
+// console.log(join);
 
-// copying  array using spread operator
+// // copying  array using spread operator
 
-const copy = [...restaurant.mainmenu];
-console.log(copy);
+// const copy = [...restaurant.mainmenu];
+// console.log(copy);
 
-//strings using spread operator
+// //strings using spread operator
 
-const str = "kim boy";
-const letters = [...str];
-console.log(letters);
-console.log(...str);
+// const str = "kim boy";
+// const letters = [...str];
+// console.log(letters);
+// console.log(...str);
 
-const ing = [
-  // prompt("lets make pasta! ingredient 1 ?"),
-  // prompt("ingredient 2 ?"),
-  // prompt("ingredient 3 ?"),
-];
-console.log(ing);
+// const ing = [
+//   // prompt("lets make pasta! ingredient 1 ?"),
+//   // prompt("ingredient 2 ?"),
+//   // prompt("ingredient 3 ?"),
+// ];
+// console.log(ing);
 
-restaurant.orderpasta(...ing);
+// restaurant.orderpasta(...ing);
 
-const newrestaurant = { ...restaurant };
-console.log(newrestaurant);
+// const newrestaurant = { ...restaurant };
+// console.log(newrestaurant);
 
-newrestaurant.name = "teashore";
-console.log(newrestaurant.name);
-console.log(restaurant.name);
+// newrestaurant.name = "teashore";
+// console.log(newrestaurant.name);
+// console.log(restaurant.name);
 
-//rest pattern and parameters
+// //rest pattern and parameters
 
-const [x, y, ...others] = [1, 2, 3, 4, 5];
-console.log(x, y, others);
+// const [x, y, ...others] = [1, 2, 3, 4, 5];
+// console.log(x, y, others);
 
-const [pizza, , risotto, ...otherfood] = [
-  ...restaurant.mainmenu,
-  ...restaurant.categories,
-];
+// const [pizza, , risotto, ...otherfood] = [
+//   ...restaurant.mainmenu,
+//   ...restaurant.categories,
+// ];
 
-console.log(pizza, risotto, otherfood);
+// console.log(pizza, risotto, otherfood);
 
-const fun = function (main, ...optonal) {
-  console.log(main);
-  console.log(optonal);
-};
-fun("onion", "ginger", "tomato");
+// const fun = function (main, ...optonal) {
+//   console.log(main);
+//   console.log(optonal);
+// };
+// fun("onion", "ginger", "tomato");
+
+// short circuiting(&&,||)AND OR
+console.log(3 || "abhi");
+console.log("abhi" || 3);
+console.log(0 || "abhi");
+console.log(null || undefined);
+console.log(undefined || null);
