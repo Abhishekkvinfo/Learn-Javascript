@@ -168,3 +168,14 @@ console.log(null || undefined);
 console.log(undefined || null);
 
 console.log(restaurant.name || 10);
+
+restaurant.orderpasta && restaurant.orderpasta("onion", "chilly");
+
+if (restaurant.orderpasta) {
+  restaurant.orderpasta("onion", "cheese");
+}
+
+console.log(0 && "hello");
+console.log("hello" && 0);
+console.log(1 && 19);
+console.log(undefined && null);
