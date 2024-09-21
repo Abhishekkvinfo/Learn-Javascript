@@ -146,3 +146,10 @@ console.log(restaurant.name);
 
 const [x, y, ...others] = [1, 2, 3, 4, 5];
 console.log(x, y, others);
+
+const [pizza, , risotto, ...otherfood] = [
+  ...restaurant.mainmenu,
+  ...restaurant.categories,
+];
+
+console.log(pizza, risotto, otherfood);
