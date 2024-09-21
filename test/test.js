@@ -153,3 +153,9 @@ const [pizza, , risotto, ...otherfood] = [
 ];
 
 console.log(pizza, risotto, otherfood);
+
+const fun = function (main, ...optonal) {
+  console.log(main);
+  console.log(optonal);
+};
+fun("onion", "ginger", "tomato");
