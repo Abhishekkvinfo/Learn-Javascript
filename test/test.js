@@ -179,3 +179,7 @@ console.log(0 && "hello");
 console.log("hello" && 0);
 console.log(1 && 19);
 console.log(undefined && null);
+
+restaurant.guest = 0;
+const crtvalue = restaurant.guest ?? 10;
+console.log(crtvalue);
