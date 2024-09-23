@@ -145,68 +145,68 @@ const restaurant = {
 // //rest pattern and parameters
 
 // const [x, y, ...others] = [1, 2, 3, 4, 5];
-// console.log(x, y, others);
+// // console.log(x, y, others);
 
-// const [pizza, , risotto, ...otherfood] = [
-//   ...restaurant.mainmenu,
-//   ...restaurant.categories,
-// ];
+// // const [pizza, , risotto, ...otherfood] = [
+// //   ...restaurant.mainmenu,
+// //   ...restaurant.categories,
+// // ];
 
-// console.log(pizza, risotto, otherfood);
+// // console.log(pizza, risotto, otherfood);
 
-// const fun = function (main, ...optonal) {
-//   console.log(main);
-//   console.log(optonal);
+// // const fun = function (main, ...optonal) {
+// //   console.log(main);
+// //   console.log(optonal);
+// // };
+// // fun("onion", "ginger", "tomato");
+
+// // short circuiting(&&,||)AND OR
+// // console.log(3 || "abhi");
+// // console.log("abhi" || 3);
+// // console.log(0 || "abhi");
+// // console.log(null || undefined);
+// // console.log(undefined || null);
+
+// // console.log(restaurant.name || 10);
+
+// // restaurant.orderpasta && restaurant.orderpasta("onion", "chilly");
+
+// // if (restaurant.orderpasta) {
+// //   restaurant.orderpasta("onion", "cheese");
+// // }
+
+// // console.log(0 && "hello");
+// // console.log("hello" && 0);
+// // console.log(1 && 19);
+// // console.log(undefined && null);
+
+// // restaurant.guest = 0;
+// // const crtvalue = restaurant.guest ?? 10;
+// // console.log(crtvalue);
+
+// const rest = {
+//   name: "capri",
+//   numguests: 2,
 // };
-// fun("onion", "ginger", "tomato");
-
-// short circuiting(&&,||)AND OR
-// console.log(3 || "abhi");
-// console.log("abhi" || 3);
-// console.log(0 || "abhi");
-// console.log(null || undefined);
-// console.log(undefined || null);
-
-// console.log(restaurant.name || 10);
-
-// restaurant.orderpasta && restaurant.orderpasta("onion", "chilly");
-
-// if (restaurant.orderpasta) {
-//   restaurant.orderpasta("onion", "cheese");
-// }
-
-// console.log(0 && "hello");
-// console.log("hello" && 0);
-// console.log(1 && 19);
-// console.log(undefined && null);
-
-// restaurant.guest = 0;
-// const crtvalue = restaurant.guest ?? 10;
-// console.log(crtvalue);
-
-const rest1 = {
-  name: "capri",
-  numguests: 2,
-};
-const rest2 = {
-  name: "sayuj",
-  owner: "mammus",
-};
-console.log(rest2);
-// rest2.numguests = rest1.numguests || 10;
-// console.log(rest1);
+// const rest2 = {
+//   name: "sayuj",
+//   owner: "mammus",
+// };
 // console.log(rest2);
+// // rest2.numguests = rest1.numguests || 10;
+// // console.log(rest1);
+// // console.log(rest2);
 
+// // console.log(rest2);
+
+// rest.numguests &&= 10;
+// console.log(rest);
+
+// // rest2.numguests = rest1.numguests && 34;
+
+// // console.log(rest2, rest1);
+
+// rest.numguests ??= 10;
+// console.log(rest);
+// rest2.numguests ??= 20;
 // console.log(rest2);
-
-rest1.numguests &&= 10;
-console.log(rest1);
-
-// rest2.numguests = rest1.numguests && 34;
-
-// console.log(rest2, rest1);
-
-rest1.numguests ??= 10;
-console.log(rest1);
-rest2.numguests ??= 20;
-console.log(rest2);
