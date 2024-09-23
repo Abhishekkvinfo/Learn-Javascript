@@ -210,3 +210,9 @@ const restaurant = {
 // console.log(rest);
 // rest2.numguests ??= 20;
 // console.log(rest2);
+
+const menu = [...restaurant.startermenu, ...restaurant.mainmenu];
+
+for (const [i, el] of menu.entries()) {
+  console.log(`${i + 1} :${el}`);
+}
