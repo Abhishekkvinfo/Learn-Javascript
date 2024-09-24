@@ -1,25 +1,28 @@
 "use strict";
 
+const openinghours = {
+  mon: {
+    open: 9,
+    close: 8,
+  },
+  tue: {
+    open: 9,
+    close: 8,
+  },
+  wed: {
+    open: 9,
+    close: 8,
+  },
+};
 const restaurant = {
   name: "classico italiano",
   location: "kaladi 7th street 23",
   categories: ["italian", "indian", "american"],
   startermenu: ["sharjah shake", "light lime", "garlic bread"],
   mainmenu: ["pizza", "pasta", "risotto"],
-  openinghours: {
-    mon: {
-      open: 9,
-      close: 8,
-    },
-    tue: {
-      open: 9,
-      close: 8,
-    },
-    wed: {
-      open: 9,
-      close: 8,
-    },
-  },
+
+  // ES6 FEATURE ENHANCED LITERALS
+  openinghours,
   order: function (starterindex, mainindex) {
     return [this.startermenu[starterindex], this.mainmenu[mainindex]];
   },
@@ -30,6 +33,8 @@ const restaurant = {
     console.log(`here is your tasty pasta with ${ing1},${ing2}, and ${ing3}`);
   },
 };
+
+console.log(restaurant);
 
 // const arr = [2, 4, 3];
 // const [x, y, z] = arr;
