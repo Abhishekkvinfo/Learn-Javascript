@@ -211,8 +211,8 @@ const restaurant = {
 // rest2.numguests ??= 20;
 // console.log(rest2);
 
-const menu = [...restaurant.startermenu, ...restaurant.mainmenu];
+const menu = [...restaurant.mainmenu, ...restaurant.startermenu];
 
-for (const [i, el] of menu.entries()) {
-  console.log(`${i + 1} :${el}`);
+for (let [i, el] of menu.entries()) {
+  console.log(`${(i = i + 1)} : ${el}`);
 }
