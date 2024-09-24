@@ -1,7 +1,7 @@
 "use strict";
-
+const weekdays = ["mon"];
 const openinghours = {
-  mon: {
+  [weekdays[0]]: {
     open: 9,
     close: 8,
   },
@@ -20,21 +20,11 @@ const restaurant = {
   categories: ["italian", "indian", "american"],
   startermenu: ["sharjah shake", "light lime", "garlic bread"],
   mainmenu: ["pizza", "pasta", "risotto"],
-
-  // ES6 FEATURE ENHANCED LITERALS
   openinghours,
   order: function (starterindex, mainindex) {
     return [this.startermenu[starterindex], this.mainmenu[mainindex]];
   },
-  orderdelivery: function (obj) {
-    console.log(obj);
-  },
-  orderpasta: function (ing1, ing2, ing3) {
-    console.log(`here is your tasty pasta with ${ing1},${ing2}, and ${ing3}`);
-  },
 };
-
-console.log(restaurant);
 
 // const arr = [2, 4, 3];
 // const [x, y, z] = arr;
@@ -216,8 +206,8 @@ console.log(restaurant);
 // rest2.numguests ??= 20;
 // console.log(rest2);
 
-const menu = [...restaurant.mainmenu, ...restaurant.startermenu];
+// const menu = [...restaurant.mainmenu, ...restaurant.startermenu];
 
-for (let [i, el] of menu.entries()) {
-  console.log(`${(i = i + 1)} : ${el}`);
-}
+// for (let [i, el] of menu.entries()) {
+// console.log(`${(i = i + 1)} : ${el}`);
+//
