@@ -70,3 +70,6 @@ for (const day of days) {
   const open = restaurant.openinghours[day]?.open ?? "closed";
   console.log(`on ${day},we open at ${open}`);
 }
+
+console.log(restaurant.order?.(0, 2) ?? "item does not exist ");
+console.log(restaurant.ordermethod?.() ?? "item does not exist ");
