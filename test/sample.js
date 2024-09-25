@@ -6,7 +6,15 @@
 // });
 
 "use strict";
-const weekdays = ["mon"];
+const weekdays = [
+  "mon",
+  "Tuesday",
+  " Wednesday",
+  " Thursday",
+  "Friday",
+  " Saturday",
+  "Sunday",
+];
 const openinghours = {
   [weekdays[0]]: {
     open: 9,
@@ -38,3 +46,10 @@ console.log(restaurant.openinghours.mon?.close);
 console.log(restaurant.openinghours.tue?.open);
 
 console.log(restaurant.openinghours.fri?.open);
+
+const days = ["mon", "tue", " wed", " Thu", "Fri", " Sat", "Sun"];
+
+for (const day of days) {
+  const open = restaurant.openinghours[day]?.open || "closed";
+  console.log(`on ${day},we open at ${open}`);
+}
