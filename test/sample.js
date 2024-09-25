@@ -17,7 +17,7 @@ const weekdays = [
 ];
 const openinghours = {
   [weekdays[0]]: {
-    open: 9,
+    open: 0,
     close: 8,
   },
   tue: {
@@ -25,10 +25,27 @@ const openinghours = {
     close: 8,
   },
   wed: {
+    open: 0,
+    close: 8,
+  },
+  sat: {
+    open: 9,
+    close: 8,
+  },
+  sun: {
+    open: "closed",
+    close: 8,
+  },
+  thu: {
+    open: 9,
+    close: 8,
+  },
+  fri: {
     open: 9,
     close: 8,
   },
 };
+
 const restaurant = {
   name: "classico italiano",
   location: "kaladi 7th street 23",
@@ -40,16 +57,16 @@ const restaurant = {
     return [this.startermenu[starterindex], this.mainmenu[mainindex]];
   },
 };
-
+// optional chaining
 console.log(restaurant.openinghours.mon?.open);
 console.log(restaurant.openinghours.mon?.close);
 console.log(restaurant.openinghours.tue?.open);
 
 console.log(restaurant.openinghours.fri?.open);
 
-const days = ["mon", "tue", " wed", " Thu", "Fri", " Sat", "Sun"];
+const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 
 for (const day of days) {
-  const open = restaurant.openinghours[day]?.open || "closed";
+  const open = restaurant.openinghours[day]?.open ?? "closed";
   console.log(`on ${day},we open at ${open}`);
 }
