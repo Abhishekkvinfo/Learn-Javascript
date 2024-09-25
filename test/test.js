@@ -21,7 +21,7 @@ const restaurant = {
   startermenu: ["sharjah shake", "light lime", "garlic bread"],
   mainmenu: ["pizza", "pasta", "risotto"],
   openinghours,
-  order: function (starterindex, mainindex) {
+  order(starterindex, mainindex) {
     return [this.startermenu[starterindex], this.mainmenu[mainindex]];
   },
 };
