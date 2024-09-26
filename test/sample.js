@@ -85,7 +85,7 @@ for (const pro of properties) {
 
 console.log(`we are open ${properties.length} days`);
 
-// looping object by using values
+// looping object by using values entires
 
 const value = Object.values(openinghours);
 
@@ -99,3 +99,13 @@ for (const [day, { open, close }] of entire) {
     `on ${day} we open at ${open} and close ${close} and close at ${close}`
   );
 }
+
+// sets
+
+const setorders = new Set(["1", "2"]);
+
+console.log(setorders.delete("1"));
+console.log(setorders.delete("2"));
+console.log(setorders.add("3"));
+
+console.log(new Set("abhishek"));
