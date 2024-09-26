@@ -25,7 +25,7 @@ const openinghours = {
     close: 8,
   },
   wed: {
-    open: 0,
+    open: 11,
     close: 8,
   },
   sat: {
@@ -58,6 +58,7 @@ const restaurant = {
   },
 };
 // optional chaining
+
 console.log(restaurant.openinghours.mon?.open);
 console.log(restaurant.openinghours.mon?.close);
 console.log(restaurant.openinghours.tue?.open);
@@ -73,3 +74,13 @@ for (const day of days) {
 
 console.log(restaurant.order?.(0, 2) ?? "item does not exist ");
 console.log(restaurant.ordermethod?.() ?? "item does not exist ");
+
+// looping object by using keys
+
+const properties = Object.keys(openinghours);
+
+for (const pro of properties) {
+  console.log(pro);
+}
+
+console.log(`we are open ${properties.length} days`);
