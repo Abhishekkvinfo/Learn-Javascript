@@ -84,3 +84,9 @@ for (const pro of properties) {
 }
 
 console.log(`we are open ${properties.length} days`);
+
+// looping object by using values
+
+const value = Object.values(openinghours);
+
+console.log(value);
