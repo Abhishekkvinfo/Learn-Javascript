@@ -90,3 +90,12 @@ console.log(`we are open ${properties.length} days`);
 const value = Object.values(openinghours);
 
 console.log(value);
+
+const entire = Object.entries(openinghours);
+console.log(entire);
+
+for (const [day, { open, close }] of entire) {
+  console.log(
+    `on ${day} we open at ${open} and close ${close} and close at ${close}`
+  );
+}
