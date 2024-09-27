@@ -131,3 +131,7 @@ console.log(maps.get("drinks"));
 
 const time = 10;
 console.log(maps.get(time > maps.get("open") && time < maps.get("close")));
+console.log(maps);
+
+console.log(maps.size);
+console.log(maps.values("name"));
