@@ -118,9 +118,16 @@ maps.set("name", "mandhio kada");
 maps.set("location", "edappal,kerala");
 maps.set("special item", "kuzhimandhi");
 maps.set("drinks", "coco cola ,mango juice , apple juice");
+maps.set(true, "we are open");
+maps.set(false, "we are closed !");
+maps.set("open", 10);
+maps.set("close", 12);
 console.log(maps);
 maps.get("name");
 console.log(maps.get("name"));
 console.log(maps.get("location"));
 console.log(maps.get("special item"));
 console.log(maps.get("drinks"));
+
+const time = 10;
+console.log(maps.get(time > maps.get("open") && time < maps.get("close")));
