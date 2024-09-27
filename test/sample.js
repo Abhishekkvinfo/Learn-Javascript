@@ -112,6 +112,8 @@ const restaurant = {
 
 // maps
 
+// defining map 1
+
 const maps = new Map();
 
 maps.set("name", "mandhio kada");
@@ -135,3 +137,15 @@ console.log(maps);
 
 console.log(maps.size);
 console.log(maps.values("name"));
+
+// defining map instand of using set method
+
+const person = new Map([
+  ["name", "abhishek"],
+  ["job", "software dev"],
+]);
+console.log(person);
+
+for (const [key, value] of person) {
+  console.log(key);
+}
