@@ -114,9 +114,13 @@ const restaurant = {
 
 const maps = new Map();
 
-maps.set("name ", "mandhio kada");
+maps.set("name", "mandhio kada");
 maps.set("location", "edappal,kerala");
 maps.set("special item", "kuzhimandhi");
 maps.set("drinks", "coco cola ,mango juice , apple juice");
 console.log(maps);
 maps.get("name");
+console.log(maps.get("name"));
+console.log(maps.get("location"));
+console.log(maps.get("special item"));
+console.log(maps.get("drinks"));
