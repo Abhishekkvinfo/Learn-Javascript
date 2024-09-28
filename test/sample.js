@@ -143,9 +143,11 @@ console.log(maps.values("name"));
 const person = new Map([
   ["name", "abhishek"],
   ["job", "software dev"],
+  [1, "javascript"],
+  [2, "java"],
 ]);
 console.log(person);
 
 for (const [key, value] of person) {
-  console.log(key);
+  if (typeof key === Number) console.log(`answer is ${key} ${value}`);
 }
