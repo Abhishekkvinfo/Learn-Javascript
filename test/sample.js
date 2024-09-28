@@ -159,6 +159,7 @@
 // console.log(person.get(person.get(true) === answer));
 
 // working with strings
+// fundamentals of working with strings
 
 const airline = "AIR INDIA ";
 const airoplane = "A767";
@@ -175,3 +176,15 @@ console.log(airline[8]);
 
 console.log(airline.indexOf("A"));
 console.log(airline.lastIndexOf("A"));
+console.log(airline.slice(4, 7));
+
+const middleseat = function (seat) {
+  const s = seat.slice(-1);
+  if (s === "A" || s === "C") {
+    console.log(`you got middle seat`);
+  } else console.log("you are lucky");
+};
+
+middleseat("11A");
+middleseat("B1B");
+middleseat("C1C");
