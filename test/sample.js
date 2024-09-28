@@ -172,3 +172,6 @@ console.log(airline[5]);
 console.log(airline[6]);
 console.log(airline[7]);
 console.log(airline[8]);
+
+console.log(airline.indexOf("A"));
+console.log(airline.lastIndexOf("A"));
