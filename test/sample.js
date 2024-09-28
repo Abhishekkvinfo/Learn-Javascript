@@ -145,9 +145,15 @@ const person = new Map([
   ["job", "software dev"],
   [1, "javascript"],
   [2, "java"],
+  [true, 1],
 ]);
 console.log(person);
 
 for (const [key, value] of person) {
   if (typeof key === Number) console.log(`answer is ${key} ${value}`);
 }
+
+const answer = Number(prompt("enter your answer"));
+console.log(answer);
+
+console.log(person.get(person.get(true) === answer));
