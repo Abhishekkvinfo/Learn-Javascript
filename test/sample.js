@@ -174,9 +174,13 @@ console.log(airline[6]);
 console.log(airline[7]);
 console.log(airline[8]);
 
+// index method
+
 console.log(airline.indexOf("A"));
 console.log(airline.lastIndexOf("A"));
 console.log(airline.slice(4, 7));
+
+//slice method
 
 const middleseat = function (seat) {
   const s = seat.slice(-1);
@@ -188,7 +192,7 @@ const middleseat = function (seat) {
 middleseat("11A");
 middleseat("B1B");
 middleseat("C1C");
-
+// upper case lower case method
 const personname = "jOnas";
 console.log(personname);
 const tolowercase = personname.toLowerCase();
@@ -203,3 +207,9 @@ console.log(crtemail);
 if (email === crtemail) {
   console.log("This is a valid email ");
 }
+
+//replace method
+
+const indian = "282.98₹";
+const euro = indian.replace(".", ",").replace("₹", "€");
+console.log(euro);
