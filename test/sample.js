@@ -194,3 +194,12 @@ console.log(personname);
 const tolowercase = personname.toLowerCase();
 const touppercase = tolowercase[0].toUpperCase() + tolowercase.slice(1);
 console.log(touppercase);
+
+const email = "abishekkvinfo@gmail.com";
+const compareemail = "  abishekkvinfo@gmail.com ";
+
+const crtemail = compareemail.toLowerCase().trim();
+console.log(crtemail);
+if (email === crtemail) {
+  console.log("This is a valid email ");
+}
