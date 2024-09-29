@@ -5,7 +5,7 @@
 //   background.style.backgroundColor = "green";
 // });
 
-"use strict";
+// "use strict";
 // const weekdays = [
 //   "mon",
 //   "Tuesday",
@@ -217,3 +217,24 @@ console.log(euro);
 const something = "are you alone alone ??";
 const newsomething = something.replace(/alone/g, "lonely");
 console.log(newsomething);
+
+// includes method
+
+const airport = function (items) {
+  const package = items.toLowerCase();
+  if (
+    package.includes("gun") ||
+    package.includes("knife") ||
+    package.includes("gold")
+  ) {
+    console.log("you are not allowed to enter the country");
+  } else {
+    console.log("welcome to INDA!!");
+  }
+};
+airport("i have a gun with two bullets ");
+airport("i have laptop and smartphone ");
+airport("i have  knife and apples ");
+airport("i have a bag with two bullets ");
+airport("i have gold");
+airport("i have candys ");
