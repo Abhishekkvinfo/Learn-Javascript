@@ -213,3 +213,7 @@ if (email === crtemail) {
 const indian = "282.98₹";
 const euro = indian.replace(".", ",").replace("₹", "€");
 console.log(euro);
+
+const something = "are you alone alone ??";
+const newsomething = something.replace(/alone/g, "lonely");
+console.log(newsomething);
