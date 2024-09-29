@@ -188,3 +188,9 @@ const middleseat = function (seat) {
 middleseat("11A");
 middleseat("B1B");
 middleseat("C1C");
+
+const personname = "jOnas";
+console.log(personname);
+const tolowercase = personname.toLowerCase();
+const touppercase = tolowercase[0].toUpperCase() + tolowercase.slice(1);
+console.log(touppercase);
