@@ -241,4 +241,17 @@
 
 // split method
 
-console.log("ABHI+SHEK".split("+"));
+// console.log("ABHI+SHEK".split("+"));
+
+//padding string
+
+const str = "jonas";
+console.log(str.padStart(25, "0"), str.slice(5).padEnd(25, "!"));
+
+const creditcard = function (number) {
+  const strr = number + "";
+  const last = strr.slice(-4);
+  return last.padStart(strr.length, "*");
+};
+
+console.log(creditcard(2867323678));
