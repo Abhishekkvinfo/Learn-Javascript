@@ -1,2 +1,3 @@
 "strict";
-const name = 10;
+
+const plane = function (flightname, noofpassengers = 1, price = 900`$`) {};
