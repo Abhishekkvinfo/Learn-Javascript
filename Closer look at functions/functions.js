@@ -15,21 +15,22 @@
 // plane("abhshek");
 // plane("donald");
 
-const flight = "LH234";
 const abhishek = {
-  name: "abhishek",
-  passport: 12343456,
+  name: "abhishek kv",
+  details: {
+    flight: "LH888",
+    passport: 789456123,
+  },
 };
 
-const checkin = function (flightnum, passenger) {
-  flightnum = "LH999";
-  passenger = abhishek.name = "Mr " + abhishek.name;
-  if (abhishek.passport === 12343456) {
-    alert("CHECKED IN");
+const storedetails = [];
+
+const flightnum = function (flightnum, passengername, passport) {
+  abhishek.name = "MR" + abhishek.name.toUpperCase();
+  if (passport === abhishek.details.passport) {
+    alert("you have a standard 😂");
   } else {
-    alert("Wrong passport");
+    alert("you are a fraud");
   }
 };
-checkin(flight, abhishek);
-console.log(flight);
-console.log(abhishek);
+flightnum("swqnjk", "qwed", 789456123);
