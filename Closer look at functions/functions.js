@@ -34,3 +34,4 @@ const flightnum = function (flightnum, passengername, passport) {
   }
 };
 flightnum("swqnjk", "qwed", 789456123);
+flightnum("nothing", "already defined", 789456123);
