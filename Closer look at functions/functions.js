@@ -47,3 +47,22 @@ const transformer = function (str, star, fn) {
 };
 
 transformer("javascript is best", "dont mess with me", oneword);
+
+// const high5 = function () {
+//   console.log("hello");
+// };
+
+// document.body.addEventListener("click", high5);
+
+const greet = function (greetings) {
+  return function (name) {
+    console.log(`${greetings},${name} `);
+  };
+};
+const greetingsde = greet("hey");
+
+greetingsde("ABHISHERK");
+
+const greetarr = (greeting) => (name) => console.log(`${greeting} ${name}`);
+
+greetarr("hi")("Abhishek");
