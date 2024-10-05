@@ -68,3 +68,26 @@
 // const greetarr = (greeting) => (name) => console.log(`${greeting} ${name}`);
 
 // greetarr("hi")("Abhishek");
+
+// the call and apply methods
+
+const airindia = {
+  airline: "Air india",
+  iatacode: "LH",
+  bookings: [],
+
+  book(flightnum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iatacode}${flightnum}`
+    );
+    this.bookings.push({ flight: `${this.iatacode}${flightnum}`, name });
+  },
+};
+
+airindia.book(233, "Abhishek kv");
+airindia.book(233, " shibu v");
+airindia.book(233, "sambu pv");
+airindia.book(233, "irfan kv");
+airindia.book(233, "abu");
+
+console.log(airindia.bookings);
