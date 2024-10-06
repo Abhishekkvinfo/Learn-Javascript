@@ -96,11 +96,22 @@ console.log(airindia.bookings);
 
 const indiandream = {
   airline: "indiandreams",
-  name: "indiandreams",
-  iatacode: "KL",
+  name: "",
+  iatacode: "sKL",
   bookings: [],
 };
 
 const indiandreams = airindia.book;
 
 indiandreams.call(indiandream, 222, "Hima");
+
+const qatarairways = airindia.book;
+
+const qatarairway = {
+  airline: "Qatar Airways",
+  name: "",
+  iatacode: "AA",
+  bookings: [],
+};
+
+qatarairways.call(qatarairway, 897, "Abdul");
