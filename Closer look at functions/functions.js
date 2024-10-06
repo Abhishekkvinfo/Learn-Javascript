@@ -97,7 +97,7 @@ console.log(airindia.bookings);
 const indiandream = {
   airline: "indiandreams",
   name: "",
-  iatacode: "sKL",
+  iatacode: "XX",
   bookings: [],
 };
 
