@@ -85,9 +85,22 @@ const airindia = {
 };
 
 airindia.book(233, "Abhishek kv");
-airindia.book(233, " shibu v");
-airindia.book(233, "sambu pv");
-airindia.book(233, "irfan kv");
-airindia.book(233, "abu");
+// airindia.book(233, " shibu v");
+// airindia.book(233, "sambu pv");
+// airindia.book(233, "irfan kv");
+// airindia.book(233, "abu");
 
 console.log(airindia.bookings);
+
+// apply call methods
+
+const indiandream = {
+  airline: "indiandreams",
+  name: "indiandreams",
+  iatacode: "KL",
+  bookings: [],
+};
+
+const indiandreams = airindia.book;
+
+indiandreams.call(indiandream, 222, "Hima");
