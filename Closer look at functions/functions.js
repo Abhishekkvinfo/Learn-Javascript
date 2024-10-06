@@ -114,4 +114,4 @@ const qatarairway = {
   bookings: [],
 };
 
-qatarairways.call(qatarairway, 897, "Abdul");
+indiandreams.call(qatarairway, 897, "Abdul");
