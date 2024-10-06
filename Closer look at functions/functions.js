@@ -38,19 +38,19 @@
 
 // high order functions
 
-const oneword = function (str) {
-  return str;
-};
-
-const transformer = function (str, star, fn) {
-  console.log(`transformed string:${fn(star)}`);
-};
-
-transformer("javascript is best", "dont mess with me", oneword);
-
-// const high5 = function () {
-//   console.log("hello");
+// const oneword = function (str) {
+//   return str;
 // };
+
+// const transformer = function (str, star, fn) {
+//   console.log(`transformed string:${fn(star)}`);
+// };
+
+// transformer("javascript is best", "dont mess with me", oneword);
+
+// // const high5 = function () {
+// //   console.log("hello");
+// // };
 
 // document.body.addEventListener("click", high5);
 
@@ -90,7 +90,7 @@ airindia.book(233, "Abhishek kv");
 // airindia.book(233, "irfan kv");
 // airindia.book(233, "abu");
 
-console.log(airindia.bookings);
+// console.log(airindia.bookings);
 
 // apply call  methods
 
@@ -101,9 +101,9 @@ const indiandream = {
   bookings: [],
 };
 
-const indiandreams = airindia.book;
+// const indiandreams = airindia.book;
 
-indiandreams.call(indiandream, 222, "Hima");
+// indiandreams.call(indiandream, 222, "Hima");
 
 const qatarairways = airindia.book;
 
@@ -114,10 +114,13 @@ const qatarairway = {
   bookings: [],
 };
 
-qatarairways.call(qatarairway, 897, "Abdul");
+// qatarairways.call(qatarairway, 897, "Abdul");
 
-//bind method
+// bind method
 
-const qatar = airindia.book.bind(qatarairway);
+const qatar = airindia.book.bind(qatarairway, 23);
 
-qatar(22, "JONATHAN JAMES");
+qatar("JONATHAN JAMES");
+qatar("JAMES");
+qatar("martha cooper");
+qatar("sony ");
