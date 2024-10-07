@@ -245,13 +245,24 @@
 
 //padding string
 
-const str = "jonas";
-console.log(str.padStart(25, "0"), str.slice(5).padEnd(25, "!"));
+// const str = "jonas";
+// console.log(str.padStart(25, "0"), str.slice(5).padEnd(25, "!"));
 
-const creditcard = function (number) {
-  const strr = number + "";
-  const last = strr.slice(-4);
-  return last.padStart(strr.length, "*");
-};
+// const creditcard = function (number) {
+//   const strr = number + "";
+//   const last = strr.slice(-4);
+//   return last.padStart(strr.length, "*");
+// };
 
-console.log(creditcard(2867323678));
+// console.log(creditcard(2867323678));
+
+// array destructuring
+
+const arr = [2, 4, 6];
+console.log(arr);
+
+const [x, y, z] = arr;
+console.log(x, x);
+console.log(x);
+console.log(z, x);
+console.log(y);
