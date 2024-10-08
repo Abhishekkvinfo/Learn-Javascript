@@ -275,7 +275,7 @@ const person = {
   name: "anil",
   job: "software engineer",
   age: 22,
-  education: "bsc computer science",
+  education: ["bsc computer science", "msc computer science"],
 };
-
-console.log();
+const education = person.education;
+console.log(...education);
