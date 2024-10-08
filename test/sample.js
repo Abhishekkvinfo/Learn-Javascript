@@ -259,10 +259,23 @@
 // array destructuring
 
 const arr = [2, 4, 6];
-console.log(arr);
+// console.log(arr);
 
-const [x, y, z] = arr;
-console.log(x, x);
-console.log(x);
-console.log(z, x);
-console.log(y);
+// const [x, y, z] = arr;
+// console.log(x, x);
+// console.log(x);
+// console.log(z, x);
+// console.log(y);
+
+//spread operator
+
+console.log(...arr);
+
+const person = {
+  name: "anil",
+  job: "software engineer",
+  age: 22,
+  education: "bsc computer science",
+};
+
+console.log();
