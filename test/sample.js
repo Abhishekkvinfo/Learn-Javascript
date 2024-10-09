@@ -287,3 +287,9 @@ const arr = [2, 4, 6];
 console.log("john" || "");
 console.log("" || "john");
 console.log(0 || 0);
+
+//AND
+
+console.log("abhi" && 23);
+console.log(23 && "abhi");
+console.log(0 && 23);
