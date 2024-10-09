@@ -269,13 +269,21 @@ const arr = [2, 4, 6];
 
 //spread operator
 
-console.log(...arr);
+// console.log(...arr);
 
-const person = {
-  name: "anil",
-  job: "software engineer",
-  age: 22,
-  education: ["bsc computer science", "msc computer science"],
-};
-const education = person.education;
-console.log(...education);
+// const person = {
+//   name: "anil",
+//   job: "software engineer",
+//   age: 22,
+//   education: ["bsc computer science", "msc computer science"],
+// };
+// const education = person.education;
+// console.log(...education);
+
+// short  circuiting
+
+//OR ||
+
+console.log("john" || "");
+console.log("" || "john");
+console.log(0 || 0);
