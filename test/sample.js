@@ -293,3 +293,14 @@ console.log(0 || 0);
 console.log("abhi" && 23);
 console.log(23 && "abhi");
 console.log(0 && 23);
+
+//maps
+
+const me = new Map();
+
+me.set("ABHIshek", "KV");
+console.log(me);
+
+const me1 = new Set([1, 2, 3, 4, 5]);
+
+console.log(me1);
