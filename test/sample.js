@@ -301,6 +301,8 @@ const me = new Map();
 me.set("ABHIshek", "KV");
 console.log(me);
 
-const me1 = new Set([1, 2, 3, 4, 5]);
+//sets
 
-console.log(me1);
+const set = new Set([1, 2, 3, 4, 566]);
+
+console.log(set);
