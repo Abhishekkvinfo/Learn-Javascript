@@ -306,3 +306,11 @@ console.log(me);
 const set = new Set([1, 2, 3, 4, 566]);
 
 console.log(set);
+
+// working with strings
+
+const string = "abhishek";
+
+console.log(string.toUpperCase());
+console.log(string.toLowerCase());
+console.log(string.slice(4));
