@@ -211,3 +211,10 @@ const restaurant = {
 // for (let [i, el] of menu.entries()) {
 // console.log(`${(i = i + 1)} : ${el}`);
 //
+
+//array destructuring
+
+const a = [2, 3, 6];
+const [x, y, z] = a;
+
+console.log(x, y, z);
