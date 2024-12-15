@@ -219,7 +219,7 @@ const restaurant = {
   location: "kaladi 7th street 23",
   categories: ["italian", "indian", "american"],
   startermenu: ["sharjah shake", "light lime", "garlic bread"],
-  mainmenu: ["pizza", "pasta", "risotto"],
+  mainmenu: ["pizza", "risotto"],
   openinghours,
   order(starterindex, mainindex) {
     return [this.startermenu[starterindex], this.mainmenu[mainindex]];
@@ -233,3 +233,15 @@ console.log(x, y, z);
 
 const [first, , second] = restaurant.categories;
 console.log(first, second);
+
+let [starter, main] = restaurant.order(2, 0);
+
+console.log(starter, main);
+
+let [main1, secondary1] = restaurant.categories;
+
+console.log(main1, secondary1);
+
+[main1, secondary1] = [secondary1, main1];
+
+console.log(main1, secondary1);
