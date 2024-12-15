@@ -14,17 +14,17 @@ const openinghours = {
     close: 8,
   },
 };
-const restaurant = {
-  name: "classico italiano",
-  location: "kaladi 7th street 23",
-  categories: ["italian", "indian", "american"],
-  startermenu: ["sharjah shake", "light lime", "garlic bread"],
-  mainmenu: ["pizza", "pasta", "risotto"],
-  openinghours,
-  order(starterindex, mainindex) {
-    return [this.startermenu[starterindex], this.mainmenu[mainindex]];
-  },
-};
+// const restaurant = {
+//   name: "classico italiano",
+//   location: "kaladi 7th street 23",
+//   categories: ["italian", "indian", "american"],
+//   startermenu: ["sharjah shake", "light lime", "garlic bread"],
+//   mainmenu: ["pizza", "pasta", "risotto"],
+//   openinghours,
+//   order(starterindex, mainindex) {
+//     return [this.startermenu[starterindex], this.mainmenu[mainindex]];
+//   },
+// };
 
 // const arr = [2, 4, 3];
 // const [x, y, z] = arr;
@@ -214,7 +214,22 @@ const restaurant = {
 
 //array destructuring
 
+const restaurant = {
+  name: "classico italiano",
+  location: "kaladi 7th street 23",
+  categories: ["italian", "indian", "american"],
+  startermenu: ["sharjah shake", "light lime", "garlic bread"],
+  mainmenu: ["pizza", "pasta", "risotto"],
+  openinghours,
+  order(starterindex, mainindex) {
+    return [this.startermenu[starterindex], this.mainmenu[mainindex]];
+  },
+};
+
 const a = [2, 3, 6];
 const [x, y, z] = a;
 
 console.log(x, y, z);
+
+const [first, , second] = restaurant.categories;
+console.log(first, second);
