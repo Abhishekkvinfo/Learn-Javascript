@@ -1,20 +1,20 @@
-"use strict";
-const weekdays = ["mon"];
-const openinghours = {
-  [weekdays[0]]: {
-    open: 9,
-    close: 8,
-  },
-  tue: {
-    open: 9,
-    close: 8,
-  },
-  wed: {
-    open: 9,
-    close: 8,
-  },
-};
-// const restaurant = {
+// "use strict";
+// const weekdays = ["mon"];
+// const openinghours = {
+//   [weekdays[0]]: {
+//     open: 9,
+//     close: 8,
+//   },
+//   tue: {
+//     open: 9,
+//     close: 8,
+//   },
+//   wed: {
+//     open: 9,
+//     close: 8,
+//   },
+// };
+// // const restaurant = {
 //   name: "classico italiano",
 //   location: "kaladi 7th street 23",
 //   categories: ["italian", "indian", "american"],
@@ -214,34 +214,54 @@ const openinghours = {
 
 //array destructuring
 
+// const restaurant = {
+//   name: "classico italiano",
+//   location: "kaladi 7th street 23",
+//   categories: ["italian", "indian", "american"],
+//   startermenu: ["sharjah shake", "light lime", "garlic bread"],
+//   mainmenu: ["pizza", "risotto"],
+//   openinghours,
+//   order(starterindex, mainindex) {
+//     return [this.startermenu[starterindex], this.mainmenu[mainindex]];
+//   },
+// };
+
+// const a = [2, 3, 6];
+// const [x, y, z] = a;
+
+// console.log(x, y, z);
+
+// const [first, , second] = restaurant.categories;
+// console.log(first, second);
+
+// let [starter, main] = restaurant.order(2, 0);
+
+// console.log(starter, main);
+
+// let [main1, secondary1] = restaurant.categories;
+
+// console.log(main1, secondary1);
+
+// [main1, secondary1] = [secondary1, main1];
+
+// console.log(main1, secondary1);
+
+//object destructuring
+
 const restaurant = {
   name: "classico italiano",
   location: "kaladi 7th street 23",
   categories: ["italian", "indian", "american"],
   startermenu: ["sharjah shake", "light lime", "garlic bread"],
   mainmenu: ["pizza", "risotto"],
-  openinghours,
   order(starterindex, mainindex) {
     return [this.startermenu[starterindex], this.mainmenu[mainindex]];
   },
 };
 
-const a = [2, 3, 6];
-const [x, y, z] = a;
+const { categories, mainmenu, name } = restaurant;
 
-console.log(x, y, z);
+console.log(mainmenu, categories, name);
 
-const [first, , second] = restaurant.categories;
-console.log(first, second);
-
-let [starter, main] = restaurant.order(2, 0);
-
-console.log(starter, main);
-
-let [main1, secondary1] = restaurant.categories;
-
-console.log(main1, secondary1);
-
-[main1, secondary1] = [secondary1, main1];
-
-console.log(main1, secondary1);
+const { name: nahadhi, categories: items } = restaurant;
+console.log(nahadhi, items);
