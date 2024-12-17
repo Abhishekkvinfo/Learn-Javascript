@@ -254,11 +254,14 @@ const restaurant = {
   categories: ["italian", "indian", "american"],
   startermenu: ["sharjah shake", "light lime", "garlic bread"],
   mainmenu: ["pizza", "risotto"],
+  openinghours: {
+    thu: { open: 12, close: 22 },
+    fri: { open: 9, close: 12 },
+  },
   order(starterindex, mainindex) {
     return [this.startermenu[starterindex], this.mainmenu[mainindex]];
   },
 };
-
 // const { categories, mainmenu, name } = restaurant;
 
 // console.log(mainmenu, categories, name);
@@ -270,10 +273,17 @@ const restaurant = {
 
 //mutating variables
 
-let a = 12;
-let b = 55;
-let obj = { a: 22, b: 22 };
+// let a = 12;
+// let b = 55;
+// let obj = { a: 22, b: 22 };
 
-({ a, b } = obj);
+// ({ a, b } = obj);
 
-console.log(a, b);
+// console.log(a, b);
+
+const { openinghours } = restaurant;
+
+const {
+  fri: { open, close },
+} = openinghours;
+console.log(open, close);
