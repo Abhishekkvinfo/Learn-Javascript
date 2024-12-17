@@ -259,9 +259,21 @@ const restaurant = {
   },
 };
 
-const { categories, mainmenu, name } = restaurant;
+// const { categories, mainmenu, name } = restaurant;
 
-console.log(mainmenu, categories, name);
+// console.log(mainmenu, categories, name);
 
-const { name: nahadhi, categories: items } = restaurant;
-console.log(nahadhi, items);
+// const { name: nahadhi, categories: items } = restaurant;
+// console.log(nahadhi, items);
+
+// const { menu = [] } = restaurant;
+
+//mutating variables
+
+let a = 12;
+let b = 55;
+let obj = { a: 22, b: 22 };
+
+({ a, b } = obj);
+
+console.log(a, b);
